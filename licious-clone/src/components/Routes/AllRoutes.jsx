@@ -1,8 +1,15 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from '../LandingPage/HomePage'
 
 const AllRoutes = () => {
   return (
-    <div>AllRoutes</div>
+    <div>
+    <Routes>
+      <Route  path='/' element={<HomePage />} />
+       
+    </Routes>
+    </div>
   )
 }
 

@@ -1,37 +1,8 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Robot,sans-serif;
-  /* color: rgba(0,0,0,0.87); */
-  line-height: 1.5;
-  font-weight: 400;
-  background: #eaeaea;
-}
 
-a {
-  /* color: inherit; */
-  text-decoration: none;
-  color: #039be5;
-  -webkit-tap-highlight-color: transparent;
-}
-li{
-  list-style: none;
-}
-img{
-  border: 0;
-}
-
-* {
-  box-sizing: border-box;
-  /* padding: 0;
-  margin: 0; */
-  /* background: #eaeaea; */
-}
 
 /* ***************Header ******************** */
 .header_wrapper{
-  position: sticky;
+  position:static;
   width: 100%;
   top: 0;
   left: 0;

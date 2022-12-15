@@ -1,8 +1,11 @@
 import React from 'react'
-import {Box, List, ListItem, UnorderedList,Text,Image,Input, Menu, MenuButton, Portal, MenuList, MenuItem, Button} from "@chakra-ui/react";
+import {Box, List,useDisclosure, ListItem, UnorderedList,Text,Image,Input, Menu, MenuButton, Portal, MenuList, MenuItem, Button} from "@chakra-ui/react";
 import "./Navbar.css";
-
+import { Link, useParams } from "react-router-dom";
+import Bag_Drawer from '../Bag/Bag_Drawer';
 const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const drawerBag = useDisclosure();
   return (
     <>
       <Box className='header_wrapper'>
@@ -109,7 +112,8 @@ const Navbar = () => {
                             </Box>
                             <Box className='cart_section'>
                               <a className='cart_data'>
-                              <Image color={"#000"} cursor="pointer" src='https://www.licious.in/img/rebranding/cart_icon.svg' alt='cart' />
+                              <Image color={"#000"} cursor="pointer" src='https://www.licious.in/img/rebranding/cart_icon.svg' alt='cart' 
+                                onClick={() => drawerBag.onOpen()}/>
                               </a>
                             </Box>
                             <Box className='cart_details'>
@@ -119,6 +123,7 @@ const Navbar = () => {
                      </Box>
                 </Box>
                 </Box>
+                <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/>     
     </>
   )
 }
