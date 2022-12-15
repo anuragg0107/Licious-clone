@@ -3,6 +3,7 @@ import {Box, List,useDisclosure, ListItem, UnorderedList,Text,Image,Input, Menu,
 import "./Navbar.css";
 import { Link, useParams } from "react-router-dom";
 import Bag_Drawer from '../Bag/Bag_Drawer';
+import Login from '../Login/Login';
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const drawerBag = useDisclosure();
@@ -102,7 +103,8 @@ const Navbar = () => {
                               <a href="#">
                                 <Box className='profile_container'>
                                   <Box className='profile_logo'>
-                                    <Image padding={"8px"} src='https://www.licious.in/img/rebranding/profile_icon.svg' alt='profile-logo' />
+                                    <Image padding={"8px"} src='https://www.licious.in/img/rebranding/profile_icon.svg' alt='profile-logo'
+                                    onClick={() => drawerBag.onOpen()} />
                                   </Box>
                                   <Box className='username_container'>
                                     <Box className='user_login'>Login</Box>
@@ -123,7 +125,8 @@ const Navbar = () => {
                      </Box>
                 </Box>
                 </Box>
-                <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/>     
+                <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/>
+                <Login onClose={drawerBag.onClose} isOpen={drawerBag.isOpen} />     
     </>
   )
 }
