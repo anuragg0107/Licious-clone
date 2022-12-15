@@ -13,16 +13,19 @@ import {
   Image,
   Button,
   Input,
+  Divider,
+  Stack,
 } from "@chakra-ui/react";
 // import Navbar from "../Navbar/Navbar";
+import { CheckCircleIcon } from "@chakra-ui/icons";
 
 const payment = () => {
   return (
-    <Box>
-      <Heading>
+    <Box display={"flex"}>
+      {/* <Heading>
         Hope is a good thing may be the best of all thing and no good thing ever
         dies
-      </Heading>
+      </Heading> */}
       {/* <Navbar /> */}
 
       <Box
@@ -94,6 +97,7 @@ const payment = () => {
                 Pay
               </Button>
             </TabPanel>
+
             <TabPanel>
               <Heading mb={"10px"}>Amazon Pay</Heading>
 
@@ -115,6 +119,7 @@ const payment = () => {
                 Pay
               </Button>
             </TabPanel>
+
             <TabPanel>
               <Heading mb={"10px"}>Pay using UPI</Heading>
               <Box>
@@ -137,6 +142,7 @@ const payment = () => {
                 </Box>
               </Box>
             </TabPanel>
+
             <TabPanel>
               <Heading mb={"10px"}>New Card</Heading>
               <Box display={"flex"} mb={"15px"}>
@@ -243,6 +249,7 @@ const payment = () => {
             </TabPanel>
 
             <TabPanel>seven</TabPanel>
+
             <TabPanel>
               <Heading mb={"10px"}>Other wallets</Heading>
 
@@ -293,6 +300,83 @@ const payment = () => {
             </TabPanel>
           </TabPanels>
         </Tabs>
+      </Box>
+
+      <Box w={"30%"} mt={"6%"} ml={"6%"} display={"flex"}>
+        <Box>
+          <Box>
+            <CheckCircleIcon color={"green"} />
+          </Box>
+
+          <Box>
+            {/* <Stack direction='row' h='120px' p={4} color={'red'} >
+            <Divider orientation='vertical' color={'red'} />
+          </Stack> */}
+          </Box>
+
+          <Box>
+            <CheckCircleIcon color={"transparent"} />
+          </Box>
+
+          <Box>
+            <CheckCircleIcon color={"green"} mt={50} />
+          </Box>
+
+          <Box>
+            <CheckCircleIcon color={"transparent"} />
+          </Box>
+
+          <Box>
+            <CheckCircleIcon color={"red"} mt={50} />
+          </Box>
+        </Box>
+
+        <Box>
+          <Box>
+            <Heading fontSize={[12, 22]}> Address</Heading>
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              Dynamic possibilities
+            </Heading>
+          </Box>
+
+          <Box>
+            <Heading fontSize={[12, 22]} mt={50}>
+              Delivery Summary
+            </Heading>
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              Dynamic possibilities
+            </Heading>
+          </Box>
+
+          <Box>
+            <Heading fontSize={[12, 22]} mt={50}>
+              Payment Method
+            </Heading>
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              You have no saved cards
+            </Heading>
+          </Box>
+
+          <Box>
+            <Heading fontSize={[12, 22]} mt={75}>
+              {" "}
+              Bill Details
+            </Heading>
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              Subtotal
+            </Heading>
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              Delivery Charge
+            </Heading>
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              Discount
+            </Heading>
+            <hr />
+            <Heading fontSize={[10, 19]} color={"grey"}>
+              Total
+            </Heading>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
