@@ -113,19 +113,23 @@ const Navbar = () => {
                               </a>
                             </Box>
                             <Box className='cart_section'>
-                              <a className='cart_data'>
+                              {/* <a className='cart_data'>
                               <Image color={"#000"} cursor="pointer" src='https://www.licious.in/img/rebranding/cart_icon.svg' alt='cart' 
-                                onClick={() => drawerBag.onOpen()}/>
-                              </a>
+                                onClick={<Bag_Drawer/>}/>
+                              </a> */}
+                              <div className='cart_data'>
+
+                              <Bag_Drawer/>
+                              </div>
                             </Box>
-                            <Box className='cart_details'>
+                            {/* <Box className='cart_details'>
                               <Text className='cart_text'>Cart</Text>
-                            </Box>
+                            </Box> */}
                         </Box>
                      </Box>
                 </Box>
                 </Box>
-                <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/>
+                {/* <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/> */}
                 <Login onClose={drawerBag.onClose} isOpen={drawerBag.isOpen} />     
     </>
   )

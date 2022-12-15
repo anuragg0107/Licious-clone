@@ -73,17 +73,17 @@ const HomePage=()=> {
     axios.get('https://licious-database.vercel.app/bestsellers').then((res)=>{
       setData(res.data)
     })
-  })
+  },[])
   useEffect(()=>{
     axios.get('https://licious-database.vercel.app/bonelesscuts').then((res)=>{
       setBonelessData(res.data)
     })
-  })
+  },[])
   useEffect(()=>{
     axios.get('https://licious-database.vercel.app/breakfast').then((res)=>{
       setBreakfast(res.data)
     })
-  })
+  },[])
   // useEffect(()=>{
   //   axios.get('https://licious-database.vercel.app/news').then((res)=>{
   //     setnewsData(res.data)
