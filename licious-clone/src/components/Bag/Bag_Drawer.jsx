@@ -55,6 +55,7 @@ const { onClose, isOpen,onOpen } = useDisclosure();
             </Center>
           </Box>
           <DrawerBody>
+
             <Box>
              <MainPage/>
             </Box>
@@ -69,38 +70,29 @@ const { onClose, isOpen,onOpen } = useDisclosure();
             </Box>
             <Text marginTop={"15px"} >You May Want To Try</Text>
 
-            <Box marginTop={"15px"} marginBottom={"-20px"}> 
+            <Box marginTop={"15px"} > 
               <Image src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/7a72cb59-4ca0-87b6-7fa1-d8f925f6cdbc/original/Purani-Dilli-ki-Mutton-Seekh-Kebab-.jpg" w={"40%"}></Image>
             </Box>
-            <Box display={"flex"} gap={"120px"} marginTop={"15px"}>
-              <Text>
+            <Box display={"flex"} gap={"120px"}  marginTop={"20px"} backgroundColor={"white"}>
+              <Text backgroundColor={"white"}>
               Shipping address
               </Text>
+              <Link to="/Address">
               <Button  colorScheme={"white"} borderRadius={"0px"} color={"red"}>Add Address</Button>
+              </Link>
             </Box>
-            {/* <Box marginTop={"25px"}>
-              <Text marginTop={"21px"} fontSize={"12.5px"}>FREE SHIPPING OVER Rs.499/-</Text>
-              <Text fontSize={"12.5px"}>COD NOT APPLICABLE BELOW Rs.499</Text>
-              <Link to="checkout">
-              <Button
-
-              marginTop={"20px"}
-                colorScheme={"#7b7b7b"}
-                borderRadius={"0px"}
-                w={"100%"}
-                bg="#7b7b7b"
-                color={"white"}
-              >
-                CHECKOUT
-              </Button>
-              </Link> */}
-              {/* <Center>
-                <Text fontSize={"11px"} color={"#FF6781"}>100% Purchase Protection</Text>
-              </Center> */}
-              {/* <Center>
-                <Image src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_2_71095016-e5c2-48f5-a50f-fbf011232ef2.png?v=1655301396" />
-              </Center> */}
-            {/* </Box> */}
+            <Box display={"flex"} gap={"140px"} backgroundColor={"white"} >
+              <Text>Total:</Text>
+              <Button colorScheme={"#7b7b7b"}
+              borderRadius={"1%"}
+              w={"50%"}
+              bg="#7b7b7b"
+              color={"white"}
+              padding={"10px"}
+              >Proceed To Checkout</Button>
+            </Box>
+            
+             
           </DrawerBody>
         </DrawerContent>
       </Drawer>
