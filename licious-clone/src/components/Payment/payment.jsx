@@ -12,6 +12,7 @@ import {
   Text,
   Image,
   Button,
+  Input,
 } from "@chakra-ui/react";
 // import Navbar from "../Navbar/Navbar";
 
@@ -137,68 +138,70 @@ const payment = () => {
               </Box>
             </TabPanel>
             <TabPanel>
-                <Heading mb={"10px"}>New Card</Heading>
-                <Box display={"flex"} mb={"15px"}>
-                    <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                    <Text color={"green"}>
-                    15% off | ICICI Bank Credit Cards
-                    </Text>
-                  </Box>
-                  <Text>
-                  15% off upto 150 on ICICI Credit Cards | On orders above 750 | Valid thrice per user per month | Valid on all days
-                  </Text>
-                  <hr />
-                  <Box display={"flex"} mb={"15px"}>
-                    <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                    <Text color={"green"}>
-                    20% off | CITI Bank Credit & Debit Cards
-                    </Text>
-                  </Box>
-                  <Text>
-                  20% off upto 300 on all Citi Cards | Minimum order value 800 | Valid four times per user | Valid everyday
-                   </Text>
-                  <hr />
-                  <Box display={"flex"} mb={"15px"}>
-                    <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                    <Text color={"green"}>      
-                     10% off | Kotak Bank Credit & Debit Cards
-                    </Text>
-                  </Box>
-                  <Text>
-                  10% off upto 175 on all Kotak Cards | Minimum order value 750 | Valid four times per user | Valid from Thu to Fri
-                  </Text>
-                  <hr />
-                  <Box display={"flex"} mb={"15px"}>
-                    <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                    <Text color={"green"}>
-                    20-200 Cashback | LazyPay
-                    </Text>
-                  </Box>
-                  <Text>
-                  20-200 cashback on LazyPay | Valid on orders above 199 | Valid on first LazyPay transaction on Licious | Valid on all days
-                    </Text>
-                  <hr />
-                  <Box display={"flex"} mb={"15px"}>
-                    <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                    <Text color={"green"}>
-                    20% off | Federal Bank Credit & Debit Cards
-                    </Text>
-                  </Box>
-                  <Text>
-                  20% off upto 200 on Federal Bank Cards | MOV 399 | Valid twice per user | Valid everyday
-                  </Text>
-                  <hr />
+              <Heading mb={"10px"}>New Card</Heading>
+              <Box display={"flex"} mb={"15px"}>
+                <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
+                <Text color={"green"}>15% off | ICICI Bank Credit Cards</Text>
+              </Box>
+              <Text>
+                15% off upto 150 on ICICI Credit Cards | On orders above 750 |
+                Valid thrice per user per month | Valid on all days
+              </Text>
+              <hr />
+              <Box display={"flex"} mb={"15px"}>
+                <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
+                <Text color={"green"}>
+                  20% off | CITI Bank Credit & Debit Cards
+                </Text>
+              </Box>
+              <Text>
+                20% off upto 300 on all Citi Cards | Minimum order value 800 |
+                Valid four times per user | Valid everyday
+              </Text>
+              <hr />
+              <Box display={"flex"} mb={"15px"}>
+                <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
+                <Text color={"green"}>
+                  10% off | Kotak Bank Credit & Debit Cards
+                </Text>
+              </Box>
+              <Text>
+                10% off upto 175 on all Kotak Cards | Minimum order value 750 |
+                Valid four times per user | Valid from Thu to Fri
+              </Text>
+              <hr />
+              <Box display={"flex"} mb={"15px"}>
+                <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
+                <Text color={"green"}>20-200 Cashback | LazyPay</Text>
+              </Box>
+              <Text>
+                20-200 cashback on LazyPay | Valid on orders above 199 | Valid
+                on first LazyPay transaction on Licious | Valid on all days
+              </Text>
+              <hr />
+              <Box display={"flex"} mb={"15px"}>
+                <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
+                <Text color={"green"}>
+                  20% off | Federal Bank Credit & Debit Cards
+                </Text>
+              </Box>
+              <Text>
+                20% off upto 200 on Federal Bank Cards | MOV 399 | Valid twice
+                per user | Valid everyday
+              </Text>
+              <hr />
             </TabPanel>
 
             <TabPanel>
               <Heading mb={"10px"}>CRED Pay</Heading>
               <Box display={"flex"} mb={"15px"}>
-                    <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                    <Text color={"green"}>
-                    Pay using CRED pay and get cashback upto Rs.100. Applicable 2 times per month
-                    </Text>
-                  </Box>
-                 
+                <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
+                <Text color={"green"}>
+                  Pay using CRED pay and get cashback upto Rs.100. Applicable 2
+                  times per month
+                </Text>
+              </Box>
+
               <Box
                 display={"flex"}
                 border={"1px solid grey"}
@@ -214,7 +217,78 @@ const payment = () => {
                 <Text>CRED Pay</Text>
               </Box>
               <Button backgroundColor={"red"} m={"10px"} width={"30%"}>
-                 Pay
+                Pay
+              </Button>
+            </TabPanel>
+
+            <TabPanel>
+              <Input
+                type={"number"}
+                placeholder={"Card Number"}
+                m={"5"}
+                max={15}
+              ></Input>
+              <hr />
+              <Input
+                type={"name"}
+                placeholder={"Cardholder Name"}
+                m={"5"}
+              ></Input>
+              <hr />
+              <Input type={"number"} placeholder={"MM / YY"} m={"5"}></Input>
+              <hr />
+              <Button backgroundColor={"red"} m={"10px"} width={"30%"}>
+                Pay
+              </Button>
+            </TabPanel>
+
+            <TabPanel>seven</TabPanel>
+            <TabPanel>
+              <Heading mb={"10px"}>Other wallets</Heading>
+
+              <Box
+                display={"flex"}
+                border={"1px solid grey"}
+                padding={"20px"}
+                m={"10px"}
+                h={"60px"}
+                borderRadius={"20px"}
+              >
+                <Image
+                  w={10}
+                  src="https://d2407na1z3fc0t.cloudfront.net/Banner/new-ola2.png"
+                ></Image>
+                <Text>Ola Money</Text>
+              </Box>
+
+              <Box
+                display={"flex"}
+                border={"1px solid grey"}
+                padding={"20px"}
+                m={"10px"}
+                h={"60px"}
+                borderRadius={"20px"}
+              >
+                <Image
+                  w={10}
+                  src="https://d2407na1z3fc0t.cloudfront.net/Banner/airtelmoney.png"
+                ></Image>
+                <Text>Airtel Money</Text>
+              </Box>
+
+              <Button backgroundColor={"red"} m={"10px"} width={"30%"}>
+                Pay
+              </Button>
+            </TabPanel>
+
+            <TabPanel>
+              <Heading>Pay Online on Delivery</Heading>
+              <Image
+                w={"40%"}
+                src="https://www.licious.in/img/rebranding/pay_on_delivery.png"
+              ></Image>
+              <Button backgroundColor={"red"} m={"10px"} width={"30%"}>
+                Pay
               </Button>
             </TabPanel>
           </TabPanels>
