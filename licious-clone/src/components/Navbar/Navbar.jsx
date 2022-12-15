@@ -104,7 +104,7 @@ const Navbar = () => {
                                 <Box className='profile_container'>
                                   <Box className='profile_logo'>
                                     <Image padding={"8px"} src='https://www.licious.in/img/rebranding/profile_icon.svg' alt='profile-logo'
-                                    onClick={() => drawerBag.onOpen()} />
+                                     />
                                   </Box>
                                   <Box className='username_container'>
                                     <Box className='user_login'>Login</Box>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 </Box>
                 </Box>
                 <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/>
-                <Login onClose={drawerBag.onClose} isOpen={drawerBag.isOpen} />     
+                {/* <Login onClose={drawerBag.onClose} isOpen={drawerBag.isOpen} />      */}
     </>
   )
 }
