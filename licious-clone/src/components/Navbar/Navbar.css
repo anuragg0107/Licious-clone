@@ -86,7 +86,7 @@
   width: 5px;
   border: 1px solid #b4b4b4;
   background: #b4b4b4;
-  top: 10px;
+  top: 13px;
   margin: 0 12px;
   border-radius: 50%;
 }
@@ -284,4 +284,10 @@
   line-height: 20px;
   padding-top: 10px;
 }
-
+/* .categories_icon_scrollbar::-webkit-scrollbar{
+  display: none;
+}
+.categories_icon_scrollbar{
+  -ms-text-overflow: none;
+  scrollbar-width: none;
+} */
