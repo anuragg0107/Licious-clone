@@ -2,18 +2,19 @@ import { useState } from "react";
 import Item from "./Item";
 import Total from "./Total";
 
-const Initialdata = [
-  {
-    id: 1,
-    name: "Chicken",
-    price: 30,
-    qyt: 1
-  },
+// const Initialdata = [
+//   {
+//     id: 1,
+//     name: "Chicken",
+//     price: 30,
+//     qyt: 1
+//   },
  
  
-];
+// ];
 const MainPage = () => {
-  const [data, setData] = useState(Initialdata);
+  let cartData = JSON.parse(localStorage.getItem("cartData"));
+  const [data, setData] = useState(cartData);
 
   const totalsum = (sum) => {
     return sum.reduce((acc, c) => acc + c.qyt * c.price, 0);
@@ -34,7 +35,7 @@ const MainPage = () => {
         <Item
           key={item.id}
           id={item.id}
-          label={item.name}
+          label={item.title}
           price={item.price}
           qyt={item.qyt}
           hendalqty={hendalqty}

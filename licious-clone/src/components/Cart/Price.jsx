@@ -3,12 +3,13 @@ const Price = ({ label, price }) => {
       <div
         style={{
           display: "flex",
-          gap: "10px"
+          gap: "10px",
+          // color:"red"
         }}
       >
         <div>{label}</div>
         
-        <div>Rs.{price}</div>
+        <div style={{color:"red"}}>Rs.{price}</div>
       </div>
     );
   };

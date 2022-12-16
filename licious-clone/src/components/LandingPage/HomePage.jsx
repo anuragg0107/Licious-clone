@@ -89,6 +89,11 @@ const HomePage=()=> {
   //     setnewsData(res.data)
   //   })
   // })
+  let dataArr=JSON.parse(localStorage.getItem("cartData")) || []
+  const handleCart = async (data) => {
+    dataArr.push(data)
+    localStorage.setItem("cartData",JSON.stringify(dataArr))
+  }
 
   return (
     <div >
@@ -317,7 +322,7 @@ const HomePage=()=> {
                   </Box>
                   <Box className='action'>
                     <Box className='action_slider'>
-                      <Button>Add To Cart</Button>
+                      <Button onClick={()=>handleCart(el)}>Add To Cart</Button>
                     </Box>
                   </Box>
                </Box>
@@ -370,7 +375,7 @@ const HomePage=()=> {
                   </Box>
                   <Box className='action'>
                     <Box className='action_slider'>
-                      <Button>Add To Cart</Button>
+                      <Button onClick={()=>handleCart(el)}>Add To Cart</Button>
                     </Box>
                   </Box>
                </Box>
@@ -438,7 +443,7 @@ const HomePage=()=> {
                   </Box>
                   <Box className='action'>
                     <Box className='action_slider'>
-                      <Button>Add To Cart</Button>
+                      <Button onClick={()=>handleCart(el)}>Add To Cart</Button>
                     </Box>
                   </Box>
                </Box>
