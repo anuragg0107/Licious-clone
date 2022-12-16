@@ -363,7 +363,7 @@ const payment = () => {
               Bill Details
             </Heading>
             <Heading fontSize={[10, 19]} color={"grey"}>
-              Subtotal
+              Subtotal   
             </Heading>
             <Heading fontSize={[10, 19]} color={"grey"}>
               Delivery Charge
