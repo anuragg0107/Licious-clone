@@ -18,6 +18,7 @@ import {
 } from "@chakra-ui/react";
 // import Navbar from "../Navbar/Navbar";
 import { CheckCircleIcon } from "@chakra-ui/icons";
+import Sum from "./GETTOTAL";
 
 const payment = () => {
   return (
@@ -359,21 +360,22 @@ const payment = () => {
 
           <Box>
             <Heading fontSize={[12, 22]} mt={75}>
-              {" "}
               Bill Details
             </Heading>
             <Heading fontSize={[10, 19]} color={"grey"}>
-              Subtotal   
+            <Flex justifyContent={'space-between'}> Subtotal   :- <Sum/></Flex>
             </Heading>
             <Heading fontSize={[10, 19]} color={"grey"}>
-              Delivery Charge
+            <Flex justifyContent={'space-between'}> Delivery Charge   :- <Text>0</Text></Flex>
+
             </Heading>
             <Heading fontSize={[10, 19]} color={"grey"}>
-              Discount
+            <Flex justifyContent={'space-between'}>  Discount   :- <Text>0</Text></Flex>
+
             </Heading>
             <hr />
-            <Heading fontSize={[10, 19]} color={"grey"}>
-              Total
+            <Heading fontSize={[10, 19]} color={"grey"} mt={'15px'}>
+            <Flex justifyContent={'space-between'}> Total   :- <Sum/></Flex>
             </Heading>
           </Box>
         </Box>
