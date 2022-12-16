@@ -8,6 +8,7 @@ import { DrawerLogin } from "../Login/DrawerLogin";
 import { AppContext } from "../Context/ContextProvider";
 import { ProfileMenu } from "../Login/ProfileMenu";
 const Navbar = () => {
+  const { isAuth } = React.useContext(AppContext);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const drawerBag = useDisclosure();
   return (
@@ -103,7 +104,7 @@ const Navbar = () => {
                       {isAuth ? <ProfileMenu /> : <DrawerLogin />}
                     </Box>
                                   <Box className='username_container'>
-                                    <Box className='user_login'>Login</Box>
+                                    {/* <Box className='user_login'>Login</Box> */}
                                   </Box>
                                 </Box>
                               </a>
