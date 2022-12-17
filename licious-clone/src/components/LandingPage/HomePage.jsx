@@ -89,6 +89,10 @@ const HomePage=()=> {
   //     setnewsData(res.data)
   //   })
   // })
+  const handleCart = async (data) => {
+    await axios.post("https://licious-api-data.vercel.app/cart",{...data,quantity:1})
+   
+  }
 
   return (
     <div >
@@ -317,7 +321,7 @@ const HomePage=()=> {
                   </Box>
                   <Box className='action'>
                     <Box className='action_slider'>
-                      <Button>Add To Cart</Button>
+                    <Button onClick={()=>handleCart(el)}>Add To Cart</Button>
                     </Box>
                   </Box>
                </Box>
@@ -370,7 +374,7 @@ const HomePage=()=> {
                   </Box>
                   <Box className='action'>
                     <Box className='action_slider'>
-                      <Button>Add To Cart</Button>
+                    <Button onClick={()=>handleCart(el)}>Add To Cart</Button>
                     </Box>
                   </Box>
                </Box>
@@ -438,7 +442,7 @@ const HomePage=()=> {
                   </Box>
                   <Box className='action'>
                     <Box className='action_slider'>
-                      <Button>Add To Cart</Button>
+                    <Button onClick={()=>handleCart(el)}>Add To Cart</Button>
                     </Box>
                   </Box>
                </Box>
