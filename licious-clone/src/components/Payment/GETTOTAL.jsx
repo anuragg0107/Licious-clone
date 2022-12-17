@@ -1,8 +1,6 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import React, {useState,useEffect} from 'react';
 import Total from "../Cart/Total";
 import axios from "axios";
-
  
 
 const Sum = () => {

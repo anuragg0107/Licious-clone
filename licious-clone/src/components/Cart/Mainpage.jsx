@@ -3,28 +3,24 @@ import { useState } from "react";
 import Item from "./Item";
 import Total from "./Total";
 import axios from "axios";
+
 import { Flex } from "@chakra-ui/react";
 
-
- 
- 
-
 const MainPage = () => {
-  
   const [data, setData] = useState([]);
   // const [total,setTotal]=useState(null);
   // console.log(data)
   useEffect(() => {
-    async function getCartData(){
-      let res=await axios.get("https://licious-api-data.vercel.app/cart");
+    async function getCartData() {
+      let res = await axios.get("https://licious-api-data.vercel.app/cart");
       // console.log(res)
       setData(res.data);
     }
-    getCartData()
-  },[])
+    getCartData();
+  }, []);
 
- const totalsum = (data) => {
-    return data.reduce((acc, c) => acc +  c.price, 0);
+  const totalsum = (data) => {
+    return data.reduce((acc, c) => acc + c.price, 0);
   };
 
   const hendalqty = async (id, amount) => {
@@ -33,14 +29,17 @@ const MainPage = () => {
     //   item.id === id ? { ...item, quantity: item.quantity + amount } : item
     // );
     // setData(newdata);
-    let data=await axios.get(`https://licious-api-data.vercel.app/cart/${id}`);
+    let data = await axios.get(
+      `https://licious-api-data.vercel.app/cart/${id}`
+    );
     // console.log(data)
-    await axios.patch(`https://licious-api-data.vercel.app/cart/${id}`,{quantity:data.quantity+amount})
+    await axios.patch(`https://licious-api-data.vercel.app/cart/${id}`, {
+      quantity: data.quantity + amount,
+    });
   };
 
   return (
-    <div >
-     
+    <div>
       {data.map((item) => (
         <Item
           key={item.id}
@@ -52,10 +51,11 @@ const MainPage = () => {
         />
       ))}
 
-    <Flex >Total :- <Total  total={totalsum(data)} /></Flex>
-      
+      {/* <Total total={totalsum(data)} /> */}
+      <Flex>
+        Total :- <Total total={totalsum(data)} />
+      </Flex>
     </div>
   );
 };
-
 export default MainPage;

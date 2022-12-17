@@ -63,7 +63,8 @@ const Navbar = () => {
                               <Box className='loc_screen'></Box>
                          </Box>
                          <Box className='search_bar disabled'>
-                             <Input className='search_input' placeholder='Search for any delicious product' type={'search'} />
+                             <Input className='search_input' 
+                             placeholder='Search for any delicious product' type={'search'} />
                                 {/* <span className='search_placeholder'>Search for any delicious product</span> */}
                              {/* <Image src='https://www.licious.in/img/rebranding/search_icon.svg' alt='search-logo' className='search_logo' /> */}
                          </Box>

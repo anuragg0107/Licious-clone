@@ -24,12 +24,16 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useState, useContext } from "react";
+import { FiUser } from "react-icons/fi";
 import { PasswordInput } from "./PasswordInput";
 
 import { AppContext } from "../Context/ContextProvider";
 import { useNavigate } from "react-router-dom";
+import { BsDot } from "react-icons/bs";
 
-export function Login({ isOpen, setIsOpen }) {
+export function DrawerLogin() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const {
     isAuth,
     userLogin,
@@ -42,10 +46,6 @@ export function Login({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setError] = useState(false);
-
-  const onClose = () => {
-    setIsOpen(false);
-  };
 
   const handleClick = () => {
     axios
@@ -68,12 +68,24 @@ export function Login({ isOpen, setIsOpen }) {
         onClose();
       });
   };
+
+  // console.log(token);
+
+  //  console.log(email);
+  //  console.log(password);
+
   return (
     <>
+      <Button bg="#fafafa" onClick={onOpen} background="#fff" outline={"none"} _hover={{background:"#fff"}}>
+        {/* <FiUser fontSize="22px" /> */}
+        <Image padding={"8px"} src='https://www.licious.in/img/rebranding/profile_icon.svg' alt='profile-logo'  />
+        <Text fontSize="xs" _hover={{color:"#D11243"}}>login</Text>
+        {/* <BsDot color="red" /> */}
+      </Button>
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton bg="#c6f6d4" _hover={{ bg: "#c6f6d4" }} />
+          <DrawerCloseButton bg="#d11243" _hover={{ bg: "#d11243" }} />
           <DrawerHeader borderBottomWidth="1px" w="100%">
             <Box p="4" w="100%">
               <Image src="https://content3.jdmagicbox.com/comp/hyderabad/i2/040pxx40.xx40.190204215146.t7i2/catalogue/licious-delivery-hub-yousufguda-hyderabad-online-websites-for-meat-eazdfnrkqe.jpg?clr=4f2217" />
@@ -99,9 +111,9 @@ export function Login({ isOpen, setIsOpen }) {
 
               <Box>
                 <Button
-                  bg="#0f847d"
+                  bg="#d11243"
                   w="100%"
-                  _hover={{ bg: "#0f847d" }}
+                  _hover={{ bg: "#d11243" }}
                   onClick={handleClick}
                   mt="20px"
                 >
@@ -116,10 +128,7 @@ export function Login({ isOpen, setIsOpen }) {
               <Box>
                 <Text fontSize="xs">
                   By clickng, you agree with our{" "}
-                  <a
-                    color="#0f847d"
-                    href="https://pharmeasy.in/legal/privacy-policy"
-                  >
+                  <a color="#ffdc93" href="https://www.licious.in/terms">
                     {" "}
                     <Badge
                       display="inline"
@@ -136,7 +145,7 @@ export function Login({ isOpen, setIsOpen }) {
           </DrawerBody>
 
           <DrawerFooter borderTopWidth="1px">
-            <Button variant="outline" mr={3} onClick={onClose} bg="#0f847d">
+            <Button variant="outline" mr={3} onClick={onClose} bg="#d11243">
               Cancel
             </Button>
           </DrawerFooter>
