@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Total from "../Cart/Total";
 import axios from "axios";
+
  
 
-const sum = () => {
+const Sum = () => {
   
   const [data, setData] = useState([]);
 
@@ -37,4 +38,4 @@ const sum = () => {
 };
 
 
-export default sum;
+export default Sum;
