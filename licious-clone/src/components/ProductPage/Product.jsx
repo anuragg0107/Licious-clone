@@ -1,11 +1,13 @@
 import React from "react";
 
 
+
 import { Link } from "react-router-dom";
 import "./Product.css";
 
 const Product = ({item}) => {
   const { id, image,title,description,wet,price} = item;
+
 
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -30,7 +32,11 @@ const Product = ({item}) => {
 
         <p className="product_description_1">{description}</p>
 
+
+        <p className="product_description_1">{description}</p>
+
         <p className="product_description_1"  >{description}</p>
+
 
 
         <div className="product_weight1">
@@ -42,9 +48,13 @@ const Product = ({item}) => {
           <button className="product_add_cart1" onClick={addToCartFunction}>Add To Cart</button>
 
 
+          <button className="product_add_cart1" onClick={addToCartFunction}>Add To Cart</button>
+
+
           <button className="product_add_cart1" >Add To Cart</button>
 
           <button className="product_add_cart1" onClick={addToCartFunction}>Add To Cart</button>
+
 
 
         </div>
@@ -58,6 +68,10 @@ export default Product;
 
 export default Product;
 
+
 export default Product;
+
+export default Product;
+
 
 

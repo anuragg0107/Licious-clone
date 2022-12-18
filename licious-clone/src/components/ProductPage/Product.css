@@ -1,11 +1,22 @@
 
+
 * {
     cursor: pointer;
     }
+
     .product_weight1{
         display: flex;
         margin-top: 20px;
         margin-left: 20px;
+
+        justify-content: space-between;
+        /* border: 2px solid red; */
+    }
+    .allProduct1{
+        width: 100%;
+        /* border: 1px solid green; */
+        margin-top: -80px;
+
 
 /* * {
     cursor: pointer;
@@ -24,10 +35,14 @@
     width: 100%;
     /* border: 1px solid green; */
     margin-top: -80px;
+
     }
     .allProduct11{
         display: grid;
         grid-template-columns: repeat(3,380px); 
+
+        margin-left: 116px;
+
 
         margin-left: 180px;
 
@@ -35,6 +50,7 @@
         margin-left: 180px;
 
         margin-left: 116px;
+
 
 
         gap: 15px;
@@ -64,6 +80,10 @@
         color: gray;
 
 
+        margin-left: 10px;
+        color: gray;
+
+
         color: gray;
 
         font-family: Source Sans Pro;
@@ -74,6 +94,7 @@
         color: #727272;
 
 
+
     }
     
     .product_title1{
@@ -81,9 +102,11 @@
 
 
 
+
         margin-top: 16px;
         color: #1A202A;
         font-weight: 600;
+
 
 
     }
@@ -100,12 +123,16 @@
     }
     .product_add_cart1{
 
+        /* margin-left: 82px; */
+
+
         margin-left: 82px;
 
 
         margin-left: 82px;
 
         /* margin-left: 82px; */
+
 
 
         border: none;
@@ -121,14 +148,19 @@
         cursor: pointer;
         font-weight: 600;
 
+        margin-right: 16px;
+
+
 
         margin-right: 16px;
+
 
 
     }
     .product_sort_start1{
         display: flex;
         /* margin: 18px; */
+
 
         margin-left: 180px;  
         /* border: 1px solid black;   */
@@ -139,13 +171,13 @@
         gap: -5px;
 
 
+
         margin-left: 116px;  
         /* border: 1px solid black;   */
         border-top: solid 1px #DEE2E6;
         border-bottom: solid 1px #DEE2E6;
         padding: 16px 0;
         gap: -5px;
-
 
     }
     .label{
@@ -166,12 +198,16 @@
     .allTagh1 {
         text-align: left;
 
+        margin-left: 116px;
+
+
         margin-left: 180px;
 
 
         margin-left: 180px;
 
         margin-left: 116px;
+
 
 
         font-size: 24px;
@@ -182,10 +218,12 @@
     }
 
 
+
     
     .product_sort_start2{
         width: 180px;
         align-items: left;
+
 
 
     .all_image_21{
@@ -198,9 +236,13 @@
     .product_sort_start2{
         display: flex;
 
+        width: 90%;
+
+
         width: 100%;
 
         width: 90%;
+
 
         align-items: left;
         margin: auto;
@@ -220,16 +262,19 @@
         /* margin-left: 5px; */
 
 
+        /* margin-left: 5px; */
+
+
         margin-left: 5px;
 
         /* margin-left: 5px; */
+
 
 
         font-size: 14px;
         line-height: 17px;
         color: #4B4F54;
     }
-
 
     .piecess_image111{
         width: 24px;
@@ -238,7 +283,6 @@
         display: flex;
         gap: 7px;
     }
-
 
  
   /* medium */

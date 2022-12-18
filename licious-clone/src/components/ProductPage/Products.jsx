@@ -33,6 +33,11 @@ const Products = () => {
       </div>
 
 
+        <h1 className="allTagh1">Chicken</h1>
+        <Chickenfilter />
+      </div>
+
+
       <h1 className="allTagh1">Chicken</h1>
       <Chickenfilter />
         </div>
@@ -40,6 +45,7 @@ const Products = () => {
         <h1 className="allTagh1">Chicken</h1>
         <Chickenfilter />
       </div>
+
 
 
       <div className="allProduct11">
