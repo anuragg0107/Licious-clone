@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Licious the taste of fresh & delicious meat Website.
 
-## Available Scripts
+![Logo](http://4.bp.blogspot.com/-Kop96wBUP5k/Vhzb6xOpYWI/AAAAAAAANOM/mrKgNwi81ic/s1600/LICIOUS%2BLOGO.jpg)
 
-In the project directory, you can run:
+## Run Locally
 
-### `npm start`
+Clone the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+  git clone https://github.com/anuragg0107/freezing-roll-5661.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Go to the project directory
 
-### `npm test`
+```bash
+  cd licious-clone
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies
 
-### `npm run build`
+```bash
+  npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment Link
 
-### `npm run eject`
+https://licious-freezing.netlify.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* HTML
+* CSS
+* JavaScript
+* React js
+* Bootstrap
+* Chakra UI
+* React-Router-Dom
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Server:** Node
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Theory
 
-## Learn More
+ This is the clone website of https://www.licious.in/Licious. it is an online Meat ordering website . From here you will Get delicious fresh chicken, meats and Seafood quickly delivered. Licious offers 100% fresh & best quality Chicken, Fish/Prawns and Mutton products online.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This clone website makes by 5 developers in 5 days. Our Team Leader name is Anurag Gupta and other members name is Meenakshi singh, Harshank Patel,Sukanta Pramanik,Suraj Pratap Singh.
 
-### Code Splitting
+## Snapshots 📷
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Landing page (Home page) :- This is the Main Page of our website here you can see overview of whole website . 
+![Home_Page](https://user-images.githubusercontent.com/105916064/208317810-ef4d72da-4210-43cb-854f-f867e7aad2ec.png)
 
-### Analyzing the Bundle Size
+-Navbar page :- This is the redirecting page of other pages. when we click on given options on this navbar we can visit another pages of this website.
+![Navbar](https://user-images.githubusercontent.com/105916064/208318490-5c7b3181-325d-43d7-8359-d3fc54f6f237.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-Login page :- We made this login page with the help of reqres. on this page you have to just fill email and password of reqres login credentials and click on login                  button it creates id for you on this site.
+![Login](https://user-images.githubusercontent.com/105916064/208319121-52698bd0-db7d-4931-9f18-e9a233c73254.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Products page :- This is the product part here user can see different type of items.
+![Product_page](https://user-images.githubusercontent.com/105916064/208317921-0f6f6377-fb53-49d1-8c87-4167336c4c4a.png)
 
-### Advanced Configuration
+- Cart page :- When user choose there items on product page that items show in this page. it will show the total product of items on this page.
+![cart_page](https://user-images.githubusercontent.com/105916064/208317973-d5f23ded-d0a6-4586-82ec-7d36206e4f8f.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Categories page
+![Catgories](https://user-images.githubusercontent.com/105916064/208318178-3b533ae4-ded4-4a9d-9477-058e8af5506c.png)
 
-### Deployment
+- Payment Method page:- This the Pay amount page. it will show price of items.
+![payment](https://user-images.githubusercontent.com/105916064/208319200-acbbc7c6-2de0-4790-a014-ba701f2117b5.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Otp page :- Here user get an otp for payment.
+![otp](https://user-images.githubusercontent.com/105916064/208318338-07d4b00f-85ee-49e2-b372-3c19ec144364.png)
 
-### `npm run build` fails to minify
+-Footer page : - On this Page user can contact with the given data.
+![footer](https://user-images.githubusercontent.com/105916064/208318396-7665d930-5028-4149-9fb7-27ac0adbd205.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+End Notes 📑
+
+In this project, we tried to achieve a nearly perfect clone of the original website as much as possible. This entire journey of this construct week has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence. Most of the features are added and the functionality of the website is achieved.
+
+
+
