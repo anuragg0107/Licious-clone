@@ -1,5 +1,10 @@
+
 import * as types from "./actionTypes"
 import axios from "axios"
+
+import * as types from "./actionTypes";
+import axios from "axios";
+
 
 const getProducts =(id, params)=>(dispatch  )=>{
   dispatch({type : types.GET_PRODUCTS_REQUEST})

@@ -310,7 +310,7 @@ const HomePage=()=> {
                   <Box className='rate'>
                   <span className='best_seller_price'>₹{el.price}</span>
                     <span  color='#aeaeae'>
-                      <span style={{fontSize:"14px"}} color='#aeaeae' >MRP:</span>
+                      <span style={{fontSize:"14px"}} color='#aeaeae'  >MRP:</span>
                      <span className='line_through' color='#aeaeae'> ₹{el.mrp}</span> 
                     </span>
                     <span className='offer_discount'>{el.discount}</span>
