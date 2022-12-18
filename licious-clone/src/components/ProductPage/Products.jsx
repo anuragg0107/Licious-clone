@@ -28,6 +28,11 @@ const Products = () => {
     <div  >
       <div className="allProduct1">
 
+        <h1 className="allTagh1">Chicken</h1>
+        <Chickenfilter />
+      </div>
+
+
       <h1 className="allTagh1">Chicken</h1>
       <Chickenfilter />
         </div>
@@ -35,6 +40,7 @@ const Products = () => {
         <h1 className="allTagh1">Chicken</h1>
         <Chickenfilter />
       </div>
+
 
       <div className="allProduct11">
         {chicken.map((item) => {

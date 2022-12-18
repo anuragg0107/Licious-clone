@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { Link } from "react-router-dom";
 import "./Product.css";
 
@@ -26,7 +27,11 @@ const Product = ({item}) => {
 
         <p className="product_description_1">{description}</p>
 
+
+        <p className="product_description_1">{description}</p>
+
         <p className="product_description_1"  >{description}</p>
+
 
         <div className="product_weight1">
           <p className="product_weight2">{wet}</p>
@@ -34,9 +39,13 @@ const Product = ({item}) => {
         <div className="product_weight1">
           <h3 className="product_price1"> MRP:₹{price}</h3>
 
+          <button className="product_add_cart1" onClick={addToCartFunction}>Add To Cart</button>
+
+
           <button className="product_add_cart1" >Add To Cart</button>
 
           <button className="product_add_cart1" onClick={addToCartFunction}>Add To Cart</button>
+
 
         </div>
       </div>
@@ -46,5 +55,9 @@ const Product = ({item}) => {
 
 export default Product;
 
+
 export default Product;
+
+export default Product;
+
 

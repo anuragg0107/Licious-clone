@@ -16,6 +16,7 @@
         margin-left: 10px;
         justify-content: space-between;
 
+
         /* border: 2px solid red; */
     }
 
@@ -30,7 +31,11 @@
 
         margin-left: 180px;
 
+
+        margin-left: 180px;
+
         margin-left: 116px;
+
 
         gap: 15px;
         margin-top: 10px;
@@ -55,6 +60,10 @@
     
     .product_description_1{
 
+        margin-left: 10px;
+        color: gray;
+
+
         color: gray;
 
         font-family: Source Sans Pro;
@@ -64,14 +73,18 @@
         font-size: 14px;
         color: #727272;
 
+
     }
     
     .product_title1{
         margin-left: 10px;
 
+
+
         margin-top: 16px;
         color: #1A202A;
         font-weight: 600;
+
 
     }
     .product_price1{
@@ -89,7 +102,11 @@
 
         margin-left: 82px;
 
+
+        margin-left: 82px;
+
         /* margin-left: 82px; */
+
 
         border: none;
         background-color: rgb(210, 17, 50);
@@ -104,7 +121,9 @@
         cursor: pointer;
         font-weight: 600;
 
+
         margin-right: 16px;
+
 
     }
     .product_sort_start1{
@@ -117,12 +136,16 @@
         border-bottom: solid 1px #DEE2E6;
         padding: 20px;
 
+        gap: -5px;
+
+
         margin-left: 116px;  
         /* border: 1px solid black;   */
         border-top: solid 1px #DEE2E6;
         border-bottom: solid 1px #DEE2E6;
         padding: 16px 0;
         gap: -5px;
+
 
     }
     .label{
@@ -145,7 +168,11 @@
 
         margin-left: 180px;
 
+
+        margin-left: 180px;
+
         margin-left: 116px;
+
 
         font-size: 24px;
         margin-top: 80px;
@@ -154,10 +181,12 @@
         color: #585858;
     }
 
+
     
     .product_sort_start2{
         width: 180px;
         align-items: left;
+
 
     .all_image_21{
         width: 32px;
@@ -168,7 +197,11 @@
     }
     .product_sort_start2{
         display: flex;
+
+        width: 100%;
+
         width: 90%;
+
         align-items: left;
         margin: auto;
         align-items: center;
@@ -184,14 +217,19 @@
         font-size: 14px;
         font-weight: 600;
 
+        /* margin-left: 5px; */
+
+
         margin-left: 5px;
 
         /* margin-left: 5px; */
+
 
         font-size: 14px;
         line-height: 17px;
         color: #4B4F54;
     }
+
 
     .piecess_image111{
         width: 24px;
@@ -200,6 +238,7 @@
         display: flex;
         gap: 7px;
     }
+
 
  
   /* medium */
