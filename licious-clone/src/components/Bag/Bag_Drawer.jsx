@@ -113,24 +113,12 @@ const Bag_Drawer = ({ onClose, isOpen }) => {
             <Box display={"flex"} gap={"140px"} backgroundColor={"white"} >
               {/* <Text>Total:</Text> */}
             
-
               <Button colorScheme={"#7b7b7b"}
                 borderRadius={"1%"}
                 w={"50%"}
                 bg="#7b7b7b"
                 color={"white"}
                 padding={"10px"}
-
-              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={'#D11243'}
-                borderRadius={"5px"}
-                textAlign='center'
-        border={'none'}
-        fontWeight='600' transition={'all 50ms ease-out'}
-                w={"50%"}
-                color={"white"}
-                padding={"10px"} fontSize='15px'
-                boxShadow='0 0 15px rgb(0 0 0 /20%)'
-
               >Proceed To Checkout</Button>
              
             </Box>

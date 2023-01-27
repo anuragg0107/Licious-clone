@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./HomePage.css";
+
 function SmapleNextArrow(props){
   const {className,style,onClick}=props
   return(
