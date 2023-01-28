@@ -5,7 +5,7 @@ import { AppContext } from "../Context/ContextProvider";
 const PrivateRoutes = ({children}) => {
   const { auth } = useContext(AppContext);
   if (!auth) {
-    return <Navigate to={"/"} />;
+    return <Navigate to={"/login"} />;
   }
   return children;
 };

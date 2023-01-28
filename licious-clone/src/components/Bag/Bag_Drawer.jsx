@@ -116,7 +116,7 @@ const Bag_Drawer = ({ onClose, isOpen }) => {
               <Button colorScheme={"#7b7b7b"}
                 borderRadius={"1%"}
                 w={"50%"}
-                bg="#7b7b7b"
+                bg="red"
                 color={"white"}
                 padding={"10px"}
               >Proceed To Checkout</Button>
