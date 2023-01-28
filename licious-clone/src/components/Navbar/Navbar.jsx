@@ -21,7 +21,7 @@ import Bag_Drawer from "../Bag/Bag_Drawer";
 import { AppContext } from "../Context/ContextProvider";
 
 const Navbar = () => {
-  const Navigate = useNavigate();
+  const Navigate = useNavigate()
   // const { isAuth } = React.useContext(AppContext);
   //const { isOpen, onOpen, onClose } = useDisclosure();
   const drawerBag = useDisclosure();
