@@ -12,6 +12,7 @@ import {
   Portal,
   MenuList,
   MenuItem,
+  Hide,
 } from "@chakra-ui/react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -28,6 +29,7 @@ const Navbar = () => {
     <>
       <Box className="header_wrapper">
         <Box className="navbar_top">
+          <Hide below="lg">
           <Box className="container">
             <Box className="header_menu">
               <UnorderedList>
@@ -66,18 +68,20 @@ const Navbar = () => {
               </UnorderedList>
             </Box>
           </Box>
+          </Hide>
         </Box>
 
         <Box className="bottom_header">
           <Box className="bottom_container">
             <Box className="bottom_header_logo">
               <Link to="/">
-                <Image
+                <Image ml={{base:"0px",md:"30px",lg:"10px"}}
                   src="https://www.licious.in/img/rebranding/licious-logo.svg"
                   alt="licious_logo"
                 />
               </Link>
             </Box>
+            <Hide below="lg">
             <Box className="location">
               <Image
                 src="https://www.licious.in/img/rebranding/location_icon.svg"
@@ -107,6 +111,8 @@ const Navbar = () => {
                 type={"search"}
               />
             </Box>
+
+            </Hide>
             <Box className="categories_menu">
               <Image
                 src="https://www.licious.in/img/rebranding/category-dropdown-icon.svg"

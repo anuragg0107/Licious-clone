@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Footer.css";
-import { Box,Image, ListItem, UnorderedList,Text } from '@chakra-ui/react';
+import { Box,Image, ListItem, UnorderedList,Text,Hide } from '@chakra-ui/react';
 const Footer = () => {
   return (
     <div>
-    <Box className='footer_section'>
+    <Box className='footer_section' >
       <Box position={'relative'}>
-        <Image width='120px' src='https://www.licious.in/img/rebranding/licious-logo.svg' alt='licious-logo'/>
+        <Image width='100px' src='https://www.licious.in/img/rebranding/licious-logo.svg' alt='licious-logo'/>
       </Box>
       <Box className='useful_links'>
         <Box className='links'>
@@ -24,13 +24,13 @@ const Footer = () => {
             <ListItem >SA8000 Certification</ListItem>
             <ListItem >Sitemap</ListItem>
           </UnorderedList>
-          <UnorderedList width={"55%"}>
+          {/* <UnorderedList width={"55%"}>
             <ListItem className='heading'> Experience Licious App on Mobile </ListItem>
           <ListItem className='download_app'>
             <Image pt='4px' pb='10px' width='122px' src='https://www.licious.in/img/rebranding/app-store-new.svg' alt='playstore'/>
             <Image width='122px' src='https://www.licious.in/img/rebranding/play-store-new.png' alt='apple'/>
           </ListItem>
-          </UnorderedList>
+          </UnorderedList> */}
           <Box className='links contact'>
             <UnorderedList className='contact_us'>
               <ListItem className='heading'>CONTACT US</ListItem>
@@ -49,11 +49,13 @@ const Footer = () => {
               security@licious.com
               </ListItem>
             </UnorderedList>
+            <Hide below='md'>
             <UnorderedList >
               <ListItem  >
                 <Image className='payment' src='https://www.licious.in/img/rebranding/3-dsecure.png' alt='payment' />
               </ListItem>
             </UnorderedList>
+            </Hide>
           </Box>
         </Box>
 

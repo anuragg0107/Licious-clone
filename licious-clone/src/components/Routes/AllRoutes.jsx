@@ -20,9 +20,9 @@ const AllRoutes = () => {
         <Route
           path="/checkout"
           element={
-            <PrivateRoutes>
+            // <PrivateRoutes>
               <Payment />
-            </PrivateRoutes>
+            // </PrivateRoutes>
           }
         ></Route>
         <Route path="/checkout/otp" element={<OTP />}></Route>

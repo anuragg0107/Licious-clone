@@ -11,16 +11,20 @@
 .navbar_top{
  padding: 2px 0;
  background: #eaeaea; 
+ /* border: 3px solid red; */
 }
 .container{
-  max-width: 1600px;
-  padding-left: 220px;
+  /* max-width: 1600px; */
+  width: 80%;
+  padding-left: 8%;
   margin: 0 auto;
+  /* border: 5px solid yellow; */
 }
 .header_menu{
   display: inline-block;
   text-align: left;
   width: 35%;
+  /* border: 1px solid green; */
 }
 .header_menu ul{
  display: flex;
@@ -33,9 +37,10 @@
    padding: 0 15px;
    color: #4a4a4a;
    vertical-align: middle;
+   /* border: 1px solid red; */
  }
 .why_licious{
-  padding-left: 4px;
+  /* padding-left: 4px; */
 }
 .download{
    border: none;
@@ -91,14 +96,16 @@
   padding: 25px 0;
   height: 80px;
   box-sizing: inherit;
+  /* border: 5px solid green; */
 }
 .bottom_header .bottom_container{
-  width: 1080px;
+  /* width: auto; */
+  /* border: 1px solid red; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
+  width: 80%;
 }
 .bottom_header .bottom_container img{
   width: 95%;
@@ -254,3 +261,9 @@
   padding-top: 10px;
 }
 
+
+
+/* .bottom_header_logo{
+  border: 4px solid blue;
+  margin-left: -0px;
+} */
