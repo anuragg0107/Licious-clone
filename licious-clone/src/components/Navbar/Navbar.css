@@ -13,7 +13,6 @@
  background: #eaeaea; 
 }
 .container{
-  /* height: 30px; */
   max-width: 1600px;
   padding-left: 220px;
   margin: 0 auto;
@@ -22,7 +21,6 @@
   display: inline-block;
   text-align: left;
   width: 35%;
-  /* box-sizing: inherit; */
 }
 .header_menu ul{
  display: flex;
@@ -62,18 +60,11 @@
   width: 65%;
   display: inline-block;
   vertical-align: middle;
-  /* box-sizing: inherit; */
 }
 .header_right ul{
   text-align: right;
   padding: 0;
   display: flex;
-  /* margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-end: 1em;
-  margin-inline-start: 1em;
-  padding-inline-start: 1em;
-  padding-inline-end: 1em; */
 }
 .header_right ul li{
   font-size: 13px;
@@ -185,12 +176,6 @@
   caret-color: var(#D11243);
 }
 
- /* .search_logo{
-   height: 20px;
-   width: 20px;
-   margin-top: 3px;
-   border: none;
-} */
 .categories_menu{
   display: flex;
   align-items: center;
@@ -203,23 +188,7 @@
   object-fit:  contain;
   border: 0;
 }
-/* .categories_menu span{
-  margin-left: 10px;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000;
-}
-.categories_menu span:hover{
-  color: #D11243;
-} */
-/* .cateogires_menu{
-  position: absolute;
-  width: 553px;
-  height: 544px;
-  top: 100px;
-  right: 7%;
-  z-index: 2;
-} */
+
 .scroll_data{
   width: 100%;
   display: inline-flex;
@@ -284,10 +253,4 @@
   line-height: 20px;
   padding-top: 10px;
 }
-/* .categories_icon_scrollbar::-webkit-scrollbar{
-  display: none;
-}
-.categories_icon_scrollbar{
-  -ms-text-overflow: none;
-  scrollbar-width: none;
-} */
+
