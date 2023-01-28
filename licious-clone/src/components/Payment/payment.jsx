@@ -13,6 +13,7 @@ import {
   Image,
   Button,
   Input,
+  Hide,
   Divider,
   Stack,
 } from "@chakra-ui/react";
@@ -32,7 +33,8 @@ const Payment = () => {
       {/* <Navbar /> */}
 
       <Box
-        w={"60%"}
+
+        w={{base:"95%",sm:"60%",md:"60%",lg:"60%"}}
         mt={"6%"}
         ml={"6%"}
         boxShadow="dark-lg"
@@ -49,39 +51,39 @@ const Payment = () => {
             {/* <hr/> */}
             <Tab>
               <Box>
-                <Text fontSize={'16px'} fontFamily='Lato' >Paytm</Text>
+                <Text fontSize={'16px'} >Paytm</Text>
                 <Box display={"flex"}>
                   <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                  <Text color={"green"} fontSize={'16px'} fontFamily='Lato'>Offers available</Text>
+                  <Text color={"green"} fontSize={'16px'} >Offers available</Text>
                 </Box>
               </Box>
             </Tab>
             {/* <hr/> */}
-            <Tab fontSize={'16px'} fontFamily='Lato' >Amazon Pay</Tab>
+            <Tab fontSize={'16px'}  >Amazon Pay</Tab>
             {/* <hr/> */}
-            <Tab fontSize={'16px'} fontFamily='Lato'>Pay using UPI</Tab>
-            <Tab fontSize={'16px'} fontFamily='Lato'>Credit/Debit Cards</Tab>
+            <Tab fontSize={'16px'} >Pay using UPI</Tab>
+            <Tab fontSize={'16px'} >Credit/Debit Cards</Tab>
             <Tab>
               <Box>
-                <Text fontSize={'16px'} fontFamily='Lato'>CRED pay</Text>
+                <Text fontSize={'16px'} >CRED pay</Text>
                 <Box display={"flex"}>
                   <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                  <Text fontSize={'16px'} fontFamily='Lato' color={"green"}>Offers available</Text>
+                  <Text fontSize={'16px'}  color={"green"}>Offers available</Text>
                 </Box>
               </Box>
             </Tab>
-            <Tab fontSize={'16px'} fontFamily='Lato'>Sodexo Food Cards</Tab>
-            <Tab fontSize={'16px'} fontFamily='Lato'>Netbanking</Tab>
-            <Tab fontSize={'16px'} fontFamily='Lato'>Other wallets</Tab>
-            <Tab fontSize={'16px'} fontFamily='Lato'>Pay Online on Delivery</Tab>
+            <Tab fontSize={'16px'} >Sodexo Food Cards</Tab>
+            <Tab fontSize={'16px'} >Netbanking</Tab>
+            <Tab fontSize={'16px'} >Other wallets</Tab>
+            <Tab fontSize={'16px'} >Pay Online on Delivery</Tab>
           </TabList>
 
           <TabPanels>
             <TabPanel>
-              <Heading mb={"10px"} fontSize={'22px'} fontFamily='Lato'>Paytm</Heading>
+              <Heading mb={"10px"} fontSize={'22px'} >Paytm</Heading>
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg" mt='-15px'></Image>
-                <Text color={"green"} fontFamily='Lato' pl='7px'>
+                <Text color={"green"}  pl='7px'>
                   20-200 Cashback on Paytm Wallet | On orders above 650 | Valid
                   twice per user | Valid everyday
                 </Text>
@@ -94,16 +96,16 @@ const Payment = () => {
                 borderRadius={"15px"}
               >
                 <Image src="https://d2407na1z3fc0t.cloudfront.net/Banner/paytm.png"></Image>
-                <Text color={"orange"} fontFamily='Lato'>(Wallet + Food Wallet + Postpaid)</Text>
+                <Text color={"orange"} >(Wallet + Food Wallet + Postpaid)</Text>
               </Box>
               <Link to="/checkout/otp">
-              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"} fontFamily='Lato' color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"} >
+              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"} >
                 Pay
               </Button></Link>
             </TabPanel>
 
             <TabPanel>
-              <Heading mb={"10px"} fontSize={'22px'} fontFamily='Lato'>Amazon Pay</Heading>
+              <Heading mb={"10px"} fontSize={'22px'} >Amazon Pay</Heading>
 
               <Box
                 display={"flex"}
@@ -119,13 +121,13 @@ const Payment = () => {
                 ></Image>
                 <Text pl='7px'fontFamily={'Lato'} >Amazon Pay</Text>
               </Box>
-              <Button _hover={{backgroundColor:"#D11243"}}  backgroundColor={"#D11243"} fontFamily='Lato' color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
+              <Button _hover={{backgroundColor:"#D11243"}}  backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
                 Pay
               </Button>
             </TabPanel>
 
             <TabPanel>
-              <Heading mb={"10px"} fontFamily='Lato'>Pay using UPI</Heading>
+              <Heading mb={"10px"} >Pay using UPI</Heading>
               <Box>
                 <Box display={"flex"}>
                   <Box w={"150px"} m={"20px"} border={"1px solid grey"}>
@@ -148,54 +150,54 @@ const Payment = () => {
             </TabPanel>
 
             <TabPanel>
-              <Heading mb={"10px"} fontFamily='Lato' fontWeight={'600'}>New Card</Heading>
+              <Heading mb={"10px"}  fontWeight={'600'}>New Card</Heading>
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                <Text color={"green"} fontFamily='Lato'>15% off | ICICI Bank Credit Cards</Text>
+                <Text color={"green"} >15% off | ICICI Bank Credit Cards</Text>
               </Box>
-              <Text fontFamily='Lato'>
+              <Text >
                 15% off upto 150 on ICICI Credit Cards | On orders above 750 |
                 Valid thrice per user per month | Valid on all days
               </Text>
               <hr />
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                <Text fontFamily='Lato' color={"green"}>
+                <Text  color={"green"}>
                   20% off | CITI Bank Credit & Debit Cards
                 </Text>
               </Box>
-              <Text fontFamily='Lato'>
+              <Text >
                 20% off upto 300 on all Citi Cards | Minimum order value 800 |
                 Valid four times per user | Valid everyday
               </Text>
               <hr />
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                <Text fontFamily='Lato' color={"green"}>
+                <Text  color={"green"}>
                   10% off | Kotak Bank Credit & Debit Cards
                 </Text>
               </Box>
-              <Text fontFamily='Lato'>
+              <Text >
                 10% off upto 175 on all Kotak Cards | Minimum order value 750 |
                 Valid four times per user | Valid from Thu to Fri
               </Text>
               <hr />
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                <Text fontFamily='Lato' color={"green"}>20-200 Cashback | LazyPay</Text>
+                <Text  color={"green"}>20-200 Cashback | LazyPay</Text>
               </Box>
-              <Text fontFamily='Lato'>
+              <Text >
                 20-200 cashback on LazyPay | Valid on orders above 199 | Valid
                 on first LazyPay transaction on Licious | Valid on all days
               </Text>
               <hr />
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg"></Image>
-                <Text fontFamily='Lato' color={"green"}>
+                <Text  color={"green"}>
                   20% off | Federal Bank Credit & Debit Cards
                 </Text>
               </Box>
-              <Text fontFamily='Lato'>
+              <Text >
                 20% off upto 200 on Federal Bank Cards | MOV 399 | Valid twice
                 per user | Valid everyday
               </Text>
@@ -203,10 +205,10 @@ const Payment = () => {
             </TabPanel>
 
             <TabPanel>
-              <Heading mb={"10px"} fontFamily='Lato' fontWeight={'600'}>CRED Pay</Heading>
+              <Heading mb={"10px"}  fontWeight={'600'}>CRED Pay</Heading>
               <Box display={"flex"} mb={"15px"}>
                 <Image src="https://www.licious.in/img/rebranding/offer.svg" mt='-15px' ></Image>
-                <Text color={"green"} fontFamily='Lato' pl='7px'>
+                <Text color={"green"}  pl='7px'>
                   Pay using CRED pay and get cashback upto Rs.100. Applicable 2
                   times per month
                 </Text>
@@ -226,7 +228,7 @@ const Payment = () => {
                 ></Image>
                 <Text fontFamily={'Lato'}>CRED Pay</Text>
               </Box>
-              <Button backgroundColor={"#D11243"} fontFamily='Lato' color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
+              <Button backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
                 Pay
               </Button>
             </TabPanel>
@@ -235,7 +237,7 @@ const Payment = () => {
               <Input
                 type={"number"}
                 placeholder={"Card Number"}
-                m={"5"} fontFamily='Lato'
+                m={"5"} 
                 max={15}
               ></Input>
               <hr />
@@ -245,9 +247,9 @@ const Payment = () => {
                 m={"5"}
               ></Input>
               <hr />
-              <Input type={"number"} fontFamily='Lato' placeholder={"MM / YY"} m={"5"}></Input>
+              <Input type={"number"}  placeholder={"MM / YY"} m={"5"}></Input>
               <hr />
-              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"} fontFamily='Lato' color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
+              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
                 Pay
               </Button>
             </TabPanel>
@@ -255,7 +257,7 @@ const Payment = () => {
             <TabPanel>seven</TabPanel>
 
             <TabPanel>
-              <Heading mb={"10px"} fontFamily='Lato' fontWeight={'600'}>Other wallets</Heading>
+              <Heading mb={"10px"}  fontWeight={'600'}>Other wallets</Heading>
 
               <Box
                 display={"flex"}
@@ -287,7 +289,7 @@ const Payment = () => {
                 <Text fontFamily={'Lato'}>Airtel Money</Text>
               </Box>
 
-              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"} fontFamily='Lato' color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
+              <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
                 Pay
               </Button>
             </TabPanel>
@@ -298,15 +300,15 @@ const Payment = () => {
                 w={"40%"}
                 src="https://www.licious.in/img/rebranding/pay_on_delivery.png"
               ></Image>
-              <Button backgroundColor={"#D11243"} fontFamily='Lato' color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"} _hover={{backgroundColor:"#D11243"}}>
+              <Button backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"} _hover={{backgroundColor:"#D11243"}}>
                 Pay
               </Button>
             </TabPanel>
           </TabPanels>
         </Tabs>
       </Box>
-
-      <Box w={"30%"} mt={"6%"} ml={"6%"} display={"flex"}>
+      <Hide below="lg">
+      <Box w={"30%"} mt={"6%"} ml={"6%"} display={"flex"} >
         <Box>
           <Box>
             <CheckCircleIcon color={"green"} />
@@ -392,6 +394,8 @@ const Payment = () => {
           </Box>
         </Box>
       </Box>
+
+      </Hide>
     </Box>
   );
 };
