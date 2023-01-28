@@ -111,8 +111,8 @@ const Register = () => {
                 borderRadius="3px"
                 paddingBottom="2px"
                 vertical-align="super"
-                font-size="12px"
-                font-weight="500"
+                fontSize="12px"
+                fontWeight="500"
                 line-height="20px"
                 padding-top="10px"
               >

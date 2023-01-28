@@ -104,7 +104,7 @@ const Navbar = () => {
               </Box>
               <Box className="loc_screen"></Box>
             </Box>
-            <Box className="search_bar disabled">
+            <Box className="search_bar">
               <Input
                 className="search_input"
                 placeholder="Search for any delicious product"

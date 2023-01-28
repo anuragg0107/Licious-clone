@@ -1,0 +1,10 @@
+.SearchResult{
+display: none;
+border: 1px solid red;
+}
+
+.search_input:hover  .SearchResult{
+display: flex;
+border: 5px solid teal;
+display: contents;
+}
