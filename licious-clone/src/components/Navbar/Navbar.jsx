@@ -17,7 +17,7 @@ import {
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 import Bag_Drawer from "../Bag/Bag_Drawer";
-
+import Search from "../ProductData/Search";
 import { AppContext } from "../Context/ContextProvider";
 
 const Navbar = () => {
@@ -104,12 +104,13 @@ const Navbar = () => {
               </Box>
               <Box className="loc_screen"></Box>
             </Box>
-            <Box className="search_bar">
-              <Input
+            <Box className="search_bar" zIndex={1}>
+              {/* <Input
                 className="search_input"
                 placeholder="Search for any delicious product"
                 type={"search"}
-              />
+              /> */}
+              <Search/>
             </Box>
 
             </Hide>
@@ -329,9 +330,11 @@ const Navbar = () => {
               <Box className="profile">
                 <a href="#">
                   <Box className="profile_container" display="flex" gap="20px">
+                    <Hide below="lg">
                     <Box className="username_container" textColor="#5c5c5c">
                       <Box onClick={() => Navigate("/signup")}>signup</Box>
                     </Box>
+                    </Hide>
                     <Box className="username_container" textColor="#5c5c5c">
                       <Box onClick={() => Navigate("/login")}>login</Box>
                     </Box>

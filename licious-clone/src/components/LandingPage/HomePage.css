@@ -8,6 +8,7 @@
   color: #4a4a4a;
   font-weight: 600;
   margin: 15px 0 5px 6px;
+  /* border: 5px solid green; */
   display: inline-block;
 }
 .subtitle_text_name{
@@ -21,41 +22,46 @@
   /* display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 20px; */
-  width: 60%;
+  justify-content: center;
+  width: 70%;
+  /* border: 5px solid blue; */
 }
 .cateogoires_titles{
   margin-top: 8px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 20px;
+  /* border: 5px solid blue; */
+  /* gap: 20px; */
 }
 .cateogoires_titles li{
   display: inline-block; 
    vertical-align: top;
   margin-right: 10px;
-  width: 264px;
   margin-bottom: 8px;
+  /* border: #D11243; */
 
 }
 .cateogoires_titles li .list_data{
   display: block;
   color: #3e4d60;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   
 }
 .cateogoires_titles li .ist_img_categories{
   width: 100%;
-  height: 205px;
+  /* height: 205px; */
   overflow: hidden;
   display: block;
   border-radius: 8px;
 }
 figure {
-	height: 205px;
-	margin: 0;
-	padding: 0;
+	/* height: 205px; */
+	
 	background: #fff;
 	overflow: hidden;
+  /* border: 5px solid black; */
+
+  
 }
 .list_img_categories figure img{
   /* -webkit-transform: scale(1);
@@ -76,6 +82,7 @@ figure {
   font-size: 16px;
   font-weight: 700;
   margin-top: 12px;
+  /* border: 5px solid black; */
 }
 
 /* ********** Meatopia ********************** */
@@ -114,7 +121,7 @@ figure {
   font-size: 12px;
   border: none;
   width: 14%;
-  position: ;
+  /* position: ; */
 }
 hr{
   border: 0.5px solid rgba(0,0,0,0.2);
@@ -144,7 +151,7 @@ hr{
   position: relative;
   margin-top: 80px;
   width: 80%;
-  margin-left: 116px;
+  /* margin-left: 116px; */
 }
 .know_about_licious h2{
   position: absolute;

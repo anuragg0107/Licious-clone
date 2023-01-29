@@ -96,7 +96,7 @@ const News = () => {
         axios.get('https://licious-database.vercel.app/news').then((res)=>{
           setnewsData(res.data)
         })
-      })
+      },[])
     
 
   return (

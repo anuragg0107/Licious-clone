@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import {Box, List,Container, ListItem, UnorderedList,Text,Image,Input, Menu, MenuButton, Portal, MenuList, MenuItem, Button} from "@chakra-ui/react";
+import {Center,Box, List,Container, ListItem, UnorderedList,Text,Image,Input, Menu, MenuButton, Portal, MenuList, MenuItem, Button,Hide} from "@chakra-ui/react";
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import News from "./News";
@@ -74,17 +74,17 @@ const HomePage=()=> {
     axios.get('https://licious-database.vercel.app/bestsellers').then((res)=>{
       setData(res.data)
     })
-  })
+  },[])
   useEffect(()=>{
     axios.get('https://licious-database.vercel.app/bonelesscuts').then((res)=>{
       setBonelessData(res.data)
     })
-  })
+  },[])
   useEffect(()=>{
     axios.get('https://licious-database.vercel.app/breakfast').then((res)=>{
       setBreakfast(res.data)
     })
-  })
+  },[])
   // useEffect(()=>{
   //   axios.get('https://licious-database.vercel.app/news').then((res)=>{
   //     setnewsData(res.data)
@@ -100,13 +100,17 @@ const HomePage=()=> {
    </Box>
      </Box>
       
-    
-     <Box  marginLeft="116px" >
+   
+     <Box >
+     <Center>
+      <Box w={'70%'}>
         <Text as='h2' className='title_heading' fontSize={"22px"}>Shop by categories</Text>
         <Box className='subtitle_text_name'>
           Freshest meats just for you
         </Box>
-      
+        </Box>
+        </Center>
+        <Center>
       <Box className='shop_categories_data'>
               <UnorderedList className='cateogoires_titles'>
                 <ListItem>
@@ -231,9 +235,10 @@ const HomePage=()=> {
                 </ListItem>
               </UnorderedList>
       </Box>
+      </Center>
       </Box>
 
-
+<Hide below="lg">
    
     <Box className='metaopia_heading'>
         <Box className='metopia_banner_data'>
@@ -249,6 +254,8 @@ const HomePage=()=> {
         </Box>
     </Box>
     
+    </Hide>
+    <Center>
     <Box className='know_about_licious'>
       <Text as='h2'>Know the Licious way</Text>
     <UnorderedList>
@@ -278,11 +285,12 @@ const HomePage=()=> {
       <Image  src='https://www.licious.in/img/rebranding/arrow.png' alt='discovered licious' />
     </Box>
     </Box>
-    
+    </Center>
+    <Hide below="lg">
     <Box className='bank_offer'>
       <Image src='https://dao54xqhg9jfa.cloudfront.net/OMS-StaticBanner/a5372f18-3f0a-a801-0160-cb20957f3acd/original/static-bank-units-nov-web.jpg?format=webp' alt='bank-offer' />
     </Box>
- 
+    </Hide>
 
 
    <Box ml='116px' mt='20px'>
@@ -290,7 +298,7 @@ const HomePage=()=> {
        display={'inline-block'}>Best Sellers</Text>
    </Box>
     
-    <div  style={{margin:"auto", justifyContent:"center", width:"90%"}}>
+    <div  style={{margin:"auto", justifyContent:"center", width:"85%"}}>
         <Slider 
         {...settings}>
          {data.map((el)=>{
@@ -343,7 +351,7 @@ const HomePage=()=> {
        display={'inline-block'}>Boneless Cuts</Text>
    </Box>
     
-    <div  style={{margin:"auto", justifyContent:"center", width:"90%"}}>
+    <div  style={{margin:"auto", justifyContent:"center", width:"85%"}}>
         <Slider 
         {...settings}>
          {bonelessData.map((el)=>{
@@ -416,7 +424,7 @@ const HomePage=()=> {
        display={'inline-block'}>Breakfast & Sneaking Specials</Text>
    </Box>
     
-    <div  style={{margin:"auto", justifyContent:"center", width:"90%"}}>
+    <div  style={{margin:"auto", justifyContent:"center", width:"85%"}}>
         <Slider 
         {...settings}>
          {breakfast.map((el)=>{
@@ -457,6 +465,7 @@ const HomePage=()=> {
         </Slider>
     </div>
 
+<Hide below="lg">
    <Box className='blogs'>
     <Box className='header'>
       <Text as='h2'>Check out our blog</Text>
@@ -499,7 +508,7 @@ const HomePage=()=> {
     </Box>
    {/* </Box> */}
    </Box>
-
+   </Hide>
     <Box className='licious_meat'>
       <Image src='https://d2407na1z3fc0t.cloudfront.net/homepageStaticBanner/homepageStaticBanner_62a34b8cba7db' alt='meat' />
     </Box>
