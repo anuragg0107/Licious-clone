@@ -228,7 +228,7 @@
 .profile_section .profile a .username_container{
   display: flex;
   flex-direction: column;
-  margin-top: 2px;
+  /* margin-top: 2px; */
 }
 .profile_section .profile a .user_login{
   font-size: 12px;

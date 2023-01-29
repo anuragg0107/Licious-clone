@@ -13,7 +13,7 @@ function SmapleNextArrow(props){
   return(
     <div
     className={className}
-    style={{ ...style, display: "block", color: "black" }}
+    style={{ ...style, display: "block", color: "black",right:"-8px" }}
     onClick={onClick}
   >
     <ChevronRightIcon w={"40px"} h={"40px"} />
@@ -293,17 +293,19 @@ const HomePage=()=> {
     </Hide>
 
 
-   <Box ml='116px' mt='20px'>
+   <Box ml='80px' mt='20px'>
        <Text as='h2' fontSize={"22px"} fontWeight="600" color={'#4a4a4a'}
        display={'inline-block'}>Best Sellers</Text>
    </Box>
     
-    <div  style={{margin:"auto", justifyContent:"center", width:"85%"}}>
+   {/* style={{margin:"auto", justifyContent:"center", width:"85%"}} */}
+    <div style={{margin:"auto", justifyContent:"center", width:"85%"}} >
+      {/* <Hide></Hide> */}
         <Slider 
         {...settings}>
          {data.map((el)=>{
           return(
-            <Box key={el.id} margin='auto'  borderWidth={'1px'} borderRadius='lg' overflow={'hidden'}>
+            <Box key={el.id}   borderWidth={'1px'} borderRadius='lg' overflow={'hidden'}>
                <Image src={el.image} alt={el.title} 
               
                /> 

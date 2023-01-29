@@ -124,12 +124,13 @@ const Navbar = () => {
                   <MenuButton
                     _hover={{ color: "#D11243" }}
                     style={{
-                      marginLeft: "10px",
-                      fontSize: "12px",
+                      marginLeft: "8px",
+                      // fontSize: "12px",
                       lineHeight: "14px",
                       color: "#000",
                     }}
-                    className="categories_icon_scrollbar"
+                    fontSize={{ base: '25px', md: '20px', lg: '16px' }}
+                    // className="categories_icon_scrollbar"
                   >
                     Categories
                   </MenuButton>
@@ -335,7 +336,7 @@ const Navbar = () => {
                       <Box onClick={() => Navigate("/signup")}>signup</Box>
                     </Box>
                     </Hide>
-                    <Box className="username_container" textColor="#5c5c5c">
+                    <Box className="username_container" fontSize={{ base: '27px', md: '20px', lg: '16px' }} marginLeft={{ base: '60px', md: '20px', lg: '16px' }} textColor="#5c5c5c">
                       <Box onClick={() => Navigate("/login")}>login</Box>
                     </Box>
                   </Box>
@@ -352,9 +353,11 @@ const Navbar = () => {
                   />
                 </a>
               </Box>
-              <Box className="cart_details">
+              <Hide below="md">
+              <Box className="cart_details" fontSize={{ base: '25px', md: '20px', lg: '16px' }}>
                 <Text className="cart_text">Cart</Text>
               </Box>
+              </Hide>
             </Box>
           </Box>
         </Box>
