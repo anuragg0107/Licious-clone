@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   useDisclosure,
@@ -19,55 +19,66 @@ import { Link, useNavigate } from "react-router-dom";
 import Bag_Drawer from "../Bag/Bag_Drawer";
 import Search from "../ProductData/Search";
 import { AppContext } from "../Context/ContextProvider";
+import MenuComponent from "../menucomponent/MenuComponent";
 
 const Navbar = () => {
-  const Navigate = useNavigate()
-  // const { isAuth } = React.useContext(AppContext);
-  //const { isOpen, onOpen, onClose } = useDisclosure();
+  const Navigate = useNavigate();
+  const [username, setuserName] = useState(localStorage.getItem("User_name"));
+
+  useEffect(() => {}, [username]);
   const drawerBag = useDisclosure();
+
+  const handleLogout = () => {
+    localStorage.removeItem("User_name");
+    window.location.reload(false);
+    Navigate("/");
+  };
+  const handleLogin = () => {
+    Navigate("/login");
+  };
   return (
     <>
       <Box className="header_wrapper">
         <Box className="navbar_top">
           <Hide below="lg">
-          <Box className="container">
-            <Box className="header_menu">
-              <UnorderedList>
-                <ListItem className="why_licious">Why Licious?</ListItem>
-                <ListItem className="download">
-                  <Text as="span">Download App</Text>
-                  <a
-                    href="https://itunes.apple.com/in/app/buy-meat-online-licious/id1052440342?mt=8"
-                    target={"_blank"}
-                  >
-                    <Image
-                      src="https://www.licious.in/img/rebranding/ios_app_icon.svg"
-                      alt="apple_Store"
-                    />
-                  </a>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.licious&pli=1"
-                    target={"_blank"}
-                  >
-                    <Image
-                      src="https://www.licious.in/img/rebranding/android_app_icon.svg"
-                      alt="play_store"
-                    />
-                  </a>
-                </ListItem>
-              </UnorderedList>
+            <Box className="container">
+              <Box className="header_menu">
+                <UnorderedList>
+                  <ListItem className="why_licious">Why Licious?</ListItem>
+                  <ListItem className="download">
+                    <Text as="span">Download App</Text>
+                    <a
+                      href="https://itunes.apple.com/in/app/buy-meat-online-licious/id1052440342?mt=8"
+                      target={"_blank"}
+                    >
+                      <Image
+                        src="https://www.licious.in/img/rebranding/ios_app_icon.svg"
+                        alt="apple_Store"
+                      />
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.licious&pli=1"
+                      target={"_blank"}
+                    >
+                      <Image
+                        src="https://www.licious.in/img/rebranding/android_app_icon.svg"
+                        alt="play_store"
+                      />
+                    </a>
+                  </ListItem>
+                </UnorderedList>
+              </Box>
+              <Box className="header_right">
+                <UnorderedList>
+                  <ListItem className="certification">
+                    FSSC 200 Certification{" "}
+                  </ListItem>
+                  <ListItem className="about-us">About Us</ListItem>
+                  <ListItem className="careers">Careers</ListItem>
+                  <ListItem className="contact-us">Contact Us</ListItem>
+                </UnorderedList>
+              </Box>
             </Box>
-            <Box className="header_right">
-              <UnorderedList>
-                <ListItem className="certification">
-                  FSSC 200 Certification{" "}
-                </ListItem>
-                <ListItem className="about-us">About Us</ListItem>
-                <ListItem className="careers">Careers</ListItem>
-                <ListItem className="contact-us">Contact Us</ListItem>
-              </UnorderedList>
-            </Box>
-          </Box>
           </Hide>
         </Box>
 
@@ -75,44 +86,44 @@ const Navbar = () => {
           <Box className="bottom_container">
             <Box className="bottom_header_logo">
               <Link to="/">
-                <Image ml={{base:"0px",md:"30px",lg:"10px"}}
+                <Image
+                  ml={{ base: "0px", md: "30px", lg: "10px" }}
                   src="https://www.licious.in/img/rebranding/licious-logo.svg"
                   alt="licious_logo"
                 />
               </Link>
             </Box>
             <Hide below="lg">
-            <Box className="location">
-              <Image
-                src="https://www.licious.in/img/rebranding/location_icon.svg"
-                alt="location"
-              />
-              <Box className="city_location">
-                <Box className="city">Bengaluru</Box>
-                <Box className="location_data">
-                  <Box className="location_name">home</Box>
-                  <Image
-                    src="https://www.licious.in/img/rebranding/down-arrow.png"
-                    alt="drop-down"
-                    style={{
-                      height: "7px",
-                      width: "11px",
-                      margin: "5px 0 0 8px",
-                    }}
-                  />
+              <Box className="location">
+                <Image
+                  src="https://www.licious.in/img/rebranding/location_icon.svg"
+                  alt="location"
+                />
+                <Box className="city_location">
+                  <Box className="city">Bengaluru</Box>
+                  <Box className="location_data">
+                    <Box className="location_name">home</Box>
+                    <Image
+                      src="https://www.licious.in/img/rebranding/down-arrow.png"
+                      alt="drop-down"
+                      style={{
+                        height: "7px",
+                        width: "11px",
+                        margin: "5px 0 0 8px",
+                      }}
+                    />
+                  </Box>
                 </Box>
+                <Box className="loc_screen"></Box>
               </Box>
-              <Box className="loc_screen"></Box>
-            </Box>
-            <Box className="search_bar" zIndex={1}>
-              {/* <Input
+              <Box className="search_bar" zIndex={1}>
+                {/* <Input
                 className="search_input"
                 placeholder="Search for any delicious product"
                 type={"search"}
               /> */}
-              <Search/>
-            </Box>
-
+                <Search />
+              </Box>
             </Hide>
             <Box className="categories_menu">
               <Image
@@ -129,7 +140,7 @@ const Navbar = () => {
                       lineHeight: "14px",
                       color: "#000",
                     }}
-                    fontSize={{ base: '25px', md: '20px', lg: '16px' }}
+                    fontSize={{ base: "25px", md: "20px", lg: "16px" }}
                     // className="categories_icon_scrollbar"
                   >
                     Categories
@@ -332,16 +343,32 @@ const Navbar = () => {
                 <a href="#">
                   <Box className="profile_container" display="flex" gap="20px">
                     <Hide below="lg">
-                    <Box className="username_container" textColor="#5c5c5c">
-                      <Box onClick={() => Navigate("/signup")}>signup</Box>
-                    </Box>
+                      <Box className="username_container" textColor="#5c5c5c">
+                        <Box onClick={() => Navigate("/signup")}>signup</Box>
+                      </Box>
                     </Hide>
-                    <Box className="username_container" fontSize={{ base: '27px', md: '20px', lg: '16px' }} marginLeft={{ base: '60px', md: '20px', lg: '16px' }} textColor="#5c5c5c">
-                      <Box onClick={() => Navigate("/login")}>login</Box>
+                    <Box
+                      className="username_container"
+                      fontSize={{ base: "27px", md: "20px", lg: "16px" }}
+                      marginLeft={{ base: "60px", md: "20px", lg: "16px" }}
+                      textColor="#5c5c5c"
+                    >
+                      {!username && <Box onClick={handleLogin}>login</Box>}
+                      {username && (
+                        <Box ml="-14px">
+                          {username && (
+                            <MenuComponent
+                              handleLogout={handleLogout}
+                              username={username}
+                            />
+                          )}
+                        </Box>
+                      )}
                     </Box>
                   </Box>
                 </a>
               </Box>
+
               <Box className="cart_section">
                 <a className="cart_data">
                   <Image
@@ -354,9 +381,12 @@ const Navbar = () => {
                 </a>
               </Box>
               <Hide below="md">
-              <Box className="cart_details" fontSize={{ base: '25px', md: '20px', lg: '16px' }}>
-                <Text className="cart_text">Cart</Text>
-              </Box>
+                <Box
+                  className="cart_details"
+                  fontSize={{ base: "25px", md: "20px", lg: "16px" }}
+                >
+                  <Text className="cart_text">Cart</Text>
+                </Box>
               </Hide>
             </Box>
           </Box>
