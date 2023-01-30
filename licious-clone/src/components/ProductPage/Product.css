@@ -76,9 +76,10 @@
     }
     .product_sort_start1{
         display: flex;
+        width: 90%;
         /* margin: 18px; */
-        margin-left: 116px;  
-        /* border: 1px solid black;   */
+        margin-left: 50px;  
+        /* border: 5px solid black;   */
         border-top: solid 1px #DEE2E6;
         border-bottom: solid 1px #DEE2E6;
         padding: 16px 0;

@@ -1,0 +1,22 @@
+ .SearchResult{
+/* border: 1px solid red; */
+/* background-color: 0px 0px 0px 35px; */
+color: white;
+background-color: rgba(0,0,0, 0.4);
+border-radius: 10px;
+/* padding-bottom: 1px; */
+}
+/*
+.search_input{
+display: flex;
+border: 5px solid teal;
+z-index: 1000;
+} */
+
+
+.title:hover{
+ /* margin-left: 40px;    */
+ text-align: center;
+transform: scale(1.05);
+font-weight: bold;
+}

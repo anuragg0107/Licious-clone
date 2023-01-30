@@ -10,7 +10,7 @@ function SampleNextArrow(props){
 const {className,style,onClick}=props
 return(
         <div className={className}
-        style={{...style, display:"block",right:"-8px",
+        style={{...style, display:"block",right:"8px",
         backgroundColor:"gray", borderRadius:"50%" }}
     onClick={onClick}  > </div>
     )
@@ -21,6 +21,7 @@ function SamplePrevArrow(props){
     return(
         <div className={className}
         style={{...style, display:"block",right:"-37px",
+        // border:"5px solid red",
         backgroundColor:"gray", borderRadius:"50%"}}
      onClick={onClick}  > </div>
     )
@@ -96,7 +97,7 @@ const News = () => {
         axios.get('https://licious-database.vercel.app/news').then((res)=>{
           setnewsData(res.data)
         })
-      })
+      },[])
     
 
   return (
@@ -114,7 +115,7 @@ const News = () => {
             <Box key={el.id} margin='auto'  borderWidth={'1px'} borderRadius='lg' overflow={'hidden'}>
                <Image src={el.image} alt={el.title}  /> 
                <Box className='best_seller_item_detail'>
-                     <Text className='best_seller_item_weight' pl='25px'>
+                     <Text className='best_seller_item_weight' >
                      <span>{el.title}</span>
                </Text>
                  </Box>
