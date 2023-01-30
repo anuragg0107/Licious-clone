@@ -20,6 +20,7 @@ function SmapleNextArrow(props){
   </div>
   )
 }
+// 
 
 function SmaplePrevArrow(props){
   const {className,style,onClick}=props
