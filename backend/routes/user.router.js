@@ -41,6 +41,7 @@ userrouter.post("/login", async (req, res) => {
   const { email, password } = req.body;
   try {
     const user = await UserModel.find({ email });
+    console.log(user[0]);
     if (user.length > 0) {
       bcrypt.compare(password, user[0].password, (err, result) => {
         if (result) {
@@ -49,7 +50,11 @@ userrouter.post("/login", async (req, res) => {
             process.env.secretKey
           );
           // console.log(token);
-          res.send({ msg: "Logged in SuccessFull", token: token });
+          res.send({
+            msg: "Logged in SuccessFull",
+            token: token,
+            user_name: user[0].name,
+          });
         } else {
           res.send({ msg: "Wrong Credentials" });
         }

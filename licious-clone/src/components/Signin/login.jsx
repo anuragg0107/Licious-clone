@@ -21,6 +21,7 @@ const Login = () => {
   const [isError, setError] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const handleClick = () => {
     if (email && password) {
       axios
@@ -29,13 +30,16 @@ const Login = () => {
           password: password,
         })
         .then((res) => {
+          localStorage.setItem("User_name", res.data.user_name);
           console.log(res);
 
           alert(res.data.msg);
 
           if (res.data.token) {
             localStorage.setItem("Token", res.data.token);
+
             Navigate("/");
+            window.location.reload(false);
           } else {
             Navigate("/login");
           }
@@ -52,8 +56,8 @@ const Login = () => {
     <div>
       <Box w="20%" m="auto">
         <Box borderBottomWidth="1px" w="100%">
-          <Box p="4" w="100%">
-            <Image w="100%" src="/images/licious.jpeg" />
+          <Box p="4" w="100%" bgColor="#d11243">
+            <Image w="100%" src="/images/licious.png" />
           </Box>
         </Box>
         <Stack spacing="24px" mt="10px">

@@ -58,8 +58,9 @@ const Register = () => {
             display="flex"
             justifyContent="center"
             alignContent="center"
+            bgColor="#d11243"
           >
-            <Image w="100%" src="/images/licious.jpeg" />
+            <Image w="100%" src="/images/licious.png" />
           </Box>
         </Box>
         <Stack spacing="24px" mt="10px">
