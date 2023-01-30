@@ -115,7 +115,7 @@ const News = () => {
             <Box key={el.id} margin='auto'  borderWidth={'1px'} borderRadius='lg' overflow={'hidden'}>
                <Image src={el.image} alt={el.title}  /> 
                <Box className='best_seller_item_detail'>
-                     <Text className='best_seller_item_weight' pl='25px'>
+                     <Text className='best_seller_item_weight' >
                      <span>{el.title}</span>
                </Text>
                  </Box>
