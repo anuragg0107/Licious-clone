@@ -41,16 +41,7 @@ const HomePage=()=> {
   const [bonelessData, setBonelessData]=useState([])
   const [breakfast,setBreakfast]=useState([])
   const [newsData,setnewsData]=useState([])
-  // const boxStyle={
-  //   display:"flex",
-  //   alignItem:"center",
-  //   justifyContent:"center",
-  //   boxSize:"250px",
-  //   color:"#fff",
-  //   textShadow:" 0 0 20px black",
-  //   fontSize:"20px",
-  //   fontWeight:"bold"
-  // }
+
   let settings= {
     dots:true,
     infintie:true,
