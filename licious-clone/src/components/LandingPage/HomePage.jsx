@@ -312,17 +312,21 @@ const HomePage=()=> {
                <Box className='best_seller_item_action'>
                   <Box className='rate'>
                   <span className='best_seller_price'>₹{el.price}</span>
+                  <Hide below="md">
                     <span  color='#aeaeae'>
                       <span style={{fontSize:"14px"}} color='#aeaeae'  >MRP:</span>
                      <span className='line_through' color='#aeaeae'> ₹{el.mrp}</span> 
                     </span>
                     <span className='offer_discount'>{el.discount}</span>
+                    </Hide>
                   </Box>
+                  <Hide below="md">
                   <Box className='action'>
                     <Box className='action_slider'>
                       <Button>Add To Cart</Button>
                     </Box>
                   </Box>
+                  </Hide>
                </Box>
                <hr></hr>
                  </Box>
@@ -365,17 +369,21 @@ const HomePage=()=> {
                <Box className='best_seller_item_action'>
                   <Box className='rate'>
                   <span className='best_seller_price'>₹{el.price}</span>
+                  <Hide below="md">
                     <span  color='#aeaeae'>
                       <span style={{fontSize:"14px"}} color='#aeaeae' >MRP:</span>
                      <span className='line_through' color='#aeaeae'> ₹{el.mrp}</span> 
                     </span>
                     <span className='offer_discount'>{el.discount}</span>
+                    </Hide>
                   </Box>
+                  <Hide below="md">
                   <Box className='action'>
                     <Box className='action_slider'>
                       <Button>Add To Cart</Button>
                     </Box>
                   </Box>
+                  </Hide>
                </Box>
                <hr></hr>
                  </Box>
@@ -439,11 +447,13 @@ const HomePage=()=> {
                   <Box className='rate'>
                   <span className='best_seller_price'>₹{el.price}</span>
                   </Box>
+                  <Hide below="md">
                   <Box className='action'>
                     <Box className='action_slider'>
                       <Button>Add To Cart</Button>
                     </Box>
                   </Box>
+                  </Hide>
                </Box>
                <hr></hr>
                  </Box>
@@ -503,9 +513,11 @@ const HomePage=()=> {
    {/* </Box> */}
    </Box>
    </Hide>
+   <Hide below="md">
     <Box className='licious_meat'>
       <Image src='https://d2407na1z3fc0t.cloudfront.net/homepageStaticBanner/homepageStaticBanner_62a34b8cba7db' alt='meat' />
     </Box>
+    </Hide>
 
 
 <Box>
