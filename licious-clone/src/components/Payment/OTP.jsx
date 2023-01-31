@@ -9,6 +9,7 @@ import {
   Heading,
   Box,
   Image,
+  Hide
 } from "@chakra-ui/react";
 
 const OTP = () => {
@@ -24,18 +25,21 @@ const OTP = () => {
     <Box
       mb={"2%"}
       mt={"2%"}
+      ml={"2%"}
+      mr={"2%"}
       bgColor={"rgb(234,234,234)"}
-      p={"100px"}
+      p={"20px"}
       display={"flex"}
       boxShadow={
         "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
       }
+      
     >
-      <Box>
-        <Heading m={"50px"}>Validate OTP (One Time Passcode)</Heading>
+      <Box  w={{base:"95%",sm:"55%"}} mt="8%">
+        <Heading m={"5%"}>Validate OTP (One Time Passcode)</Heading>
         <HStack
-          m={"50px"}
-          p={"10px"}
+          // m={"50px"}
+          // p={"10px"}
           boxShadow={
             "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
           }
@@ -57,13 +61,16 @@ const OTP = () => {
           </PinInput>
         </HStack>
       </Box>
-
-      <Box>
-        <Image
-          w={"70%"}
+ <Hide below="sm" > 
+      <Center  w={"45%"} >
+        <Image 
+          // w={"30%"}
           src="https://cdn.dribbble.com/users/3821672/screenshots/7172846/otp.gif"
-        ></Image>
-      </Box>
+        >
+
+        </Image>
+      </Center>
+      </Hide>
     </Box>
   );
 };
