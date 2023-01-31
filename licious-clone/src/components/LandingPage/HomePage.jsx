@@ -474,28 +474,6 @@ const HomePage=()=> {
     <Box className='header'>
       <Text as='h2'>Check out our blog</Text>
     </Box>
-   {/* <Box display={"flex"}> */}
-   {/* <UnorderedList className='blog_itmes'>
-      <ListItem className='li'>
-        <Box className='img_holder'>
-          <Image src='https://www.licious.in/blog/wp-content/uploads/2022/12/Shutterstock_1903754353.jpg' alt='blogimage1' />
-        </Box>
-        <Text>Chicken Korma is a Mughlai Classis That Everyone Should Know How to Make!</Text>
-      </ListItem>
-      <ListItem className='li'>
-        <Box className='img_holder'>
-          <Image src='' alt='blogimage1' />
-        </Box>
-        <Text></Text>
-      </ListItem>
-      <ListItem className='li'>
-        <Box className='img_holder'>
-          <Image src='' alt='blogimage1' />
-        </Box>
-        <Text></Text>
-      </ListItem> */}
-      
-    {/* </UnorderedList> */}
     <Box className='checkoutblogs'>
     <Box className='img_holder'>
           <Image src='https://www.licious.in/blog/wp-content/uploads/2022/12/Shutterstock_1903754353.jpg' alt='blogimage1' />
