@@ -510,7 +510,7 @@ const HomePage=()=> {
           <Text as='h2'>Make The Delectable Chicken Curry With Coconut Milk Easily At Home!</Text>
         </Box>
     </Box>
-   {/* </Box> */}
+   
    </Box>
    </Hide>
    <Hide below="md">
