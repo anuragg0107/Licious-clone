@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Product.css";
 import { addProductToCart } from "../../Redux/ProductReducer/action";
+// import { Center } from "@chakra-ui/react";
 
 const Product = ({item}) => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const Product = ({item}) => {
   }
   return (
     <div>
-      <div className="product_first_div1" key={id}>
+      <div className="product_first_div1" key={id}  >
       <Link to={`/chicken/${id}`}><img className="ProductImage" src={image} alt="abcd" />
         <h3 className="product_title1">{title}</h3>
         <p className="product_description_1">{description}</p>
