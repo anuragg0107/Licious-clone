@@ -34,7 +34,7 @@ const Payment = () => {
 
       <Box
 
-        w={{base:"95%",sm:"60%",md:"60%",lg:"60%"}}
+        w={{base:"95%",sm:"90%",md:"90%",lg:"60%"}}
         mt={"6%"}
         ml={"6%"}
         boxShadow="dark-lg"
@@ -96,7 +96,9 @@ const Payment = () => {
                 borderRadius={"15px"}
               >
                 <Image src="https://d2407na1z3fc0t.cloudfront.net/Banner/paytm.png"></Image>
+                <Hide below="sm">
                 <Text color={"orange"} >(Wallet + Food Wallet + Postpaid)</Text>
+                </Hide>
               </Box>
               <Link to="/checkout/otp">
               <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"} >
@@ -119,7 +121,9 @@ const Payment = () => {
                   w={10}
                   src="https://d2407na1z3fc0t.cloudfront.net/Banner/logo_pay-primary-fullcolor-positive.png"
                 ></Image>
-                <Text pl='7px'fontFamily={'Lato'} >Amazon Pay</Text>
+                <Hide below="sm">
+                <Text pl='7px' >Amazon Pay</Text>
+                </Hide>
               </Box>
               <Button _hover={{backgroundColor:"#D11243"}}  backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
                 Pay
@@ -226,7 +230,9 @@ const Payment = () => {
                   w={10}
                   src="https://d2407na1z3fc0t.cloudfront.net/Banner/CREDcredLOGO.png"
                 ></Image>
-                <Text fontFamily={'Lato'}>CRED Pay</Text>
+                <Hide below="sm">
+                <Text >CRED Pay</Text>
+                </Hide>
               </Box>
               <Button backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
                 Pay
@@ -271,7 +277,9 @@ const Payment = () => {
                   w={10}
                   src="https://d2407na1z3fc0t.cloudfront.net/Banner/new-ola2.png"
                 ></Image>
-                <Text fontFamily={'Lato'}>Ola Money</Text>
+                <Hide below="sm">
+                <Text >Ola Money</Text>
+                </Hide>
               </Box>
 
               <Box
@@ -286,7 +294,9 @@ const Payment = () => {
                   w={10}
                   src="https://d2407na1z3fc0t.cloudfront.net/Banner/airtelmoney.png"
                 ></Image>
-                <Text fontFamily={'Lato'}>Airtel Money</Text>
+                <Hide below="sm">
+                <Text >Airtel Money</Text>
+                </Hide>
               </Box>
 
               <Button _hover={{backgroundColor:"#D11243"}} backgroundColor={"#D11243"}  color='#fff' outline={'none'} border='none' m={"10px"} width={"30%"}>
