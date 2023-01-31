@@ -13,11 +13,13 @@
     width: 100%;
     /* border: 1px solid green; */
     margin-top: -80px;
+    /* margin: auto; */
     }
     .allProduct11{
         display: grid;
         grid-template-columns: repeat(3,380px); 
-        margin-left: 116px;
+        margin-left: 165px;
+        margin: center;
         gap: 15px;
         margin-top: 10px;
         /* border: 1px solid black; */
@@ -30,8 +32,9 @@
         /* border: 2px solid red; */
     }
      
-    .Imageabcd{
+    .ProductImage{
         width: 380px;
+        /* border: 2px solid red; */
         border-radius: 10px;
     }
     .product_weight2{

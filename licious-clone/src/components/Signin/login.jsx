@@ -54,7 +54,7 @@ const Login = () => {
   };
   return (
     <div>
-      <Box w={{base:'80%',sm:"50%",lg:"25%"}} m="auto" >
+      <Box w={{base:'80%',sm:"50%",lg:"23%"}} m="auto" >
         <Box borderBottomWidth="1px" w="100%">
           <Box p="4" w="100%" bgColor="#d11243">
             <Image w="100%" src="/images/licious.png" />

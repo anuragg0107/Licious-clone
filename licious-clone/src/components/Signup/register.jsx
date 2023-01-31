@@ -50,7 +50,7 @@ const Register = () => {
 
   return (
     <div>
-      <Box w={{base:'80%',sm:"50%",lg:"25%"}} m="auto">
+      <Box w={{base:'80%',sm:"50%",lg:"23%" }} m="auto">
         <Box borderBottomWidth="1px" w="100%">
           <Box
             p="4"
