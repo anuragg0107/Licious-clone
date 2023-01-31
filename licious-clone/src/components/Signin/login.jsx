@@ -54,7 +54,7 @@ const Login = () => {
   };
   return (
     <div>
-      <Box w="20%" m="auto">
+      <Box w={{base:'80%',sm:"50%",lg:"25%"}} m="auto" >
         <Box borderBottomWidth="1px" w="100%">
           <Box p="4" w="100%" bgColor="#d11243">
             <Image w="100%" src="/images/licious.png" />
@@ -98,6 +98,7 @@ const Login = () => {
                 m="auto"
                 borderRadius="3px"
                 paddingBottom="2px"
+               
               >
                 <Box>Register</Box>
               </Box>
