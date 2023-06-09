@@ -52,7 +52,8 @@ https://licious-freezing.netlify.app/
 
 ## Contributing
 
-This clone website makes by 5 developers in 5 days. Our Team Leader name is Anurag Gupta[https://github.com/anuragg0107] and other members name is Meenakshi singh[https://github.com/meenakshi176], Harshank Patel[https://github.com/Harshank11], Sukanta Pramanik[https://github.com/sukanta255], Suraj Pratap Singh.
+This clone website makes by 5 developers in 5 days. Our Team Leader name is Anurag Gupta[https://github.com/anuragg0107] and other members name is Meenakshi singh[https://github.com/meenakshi176], Harshank Patel[https://github.com/Harshank11], 
+Sukanta Pramanik[https://github.com/sukanta255], Suraj Pratap Singh.
 
 ## Snapshots 📷
 
